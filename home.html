@@ -1,12 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatZack</title>
+    <title>Zack Moberg</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="icon" href="./<favicon-name>.ico" type="image/x-icon">
+    <link href="public/home.css" rel="stylesheet">
+    <link href="https://colorzilla.com/gradient-editor/#ffd65e+57,febf04+100">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
-<body>
-    <h1>WhatZack</h1>
-</body>
+<main>
+    <!--Welcome Page-->
+
+    <header id="welcome-section">
+        <div class="cover" onclick="closeNav();"></div>
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60" onclick="closeNav()">
+            <path class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+        <div class="contacts">
+            <a href="https://github.com/ZMoberg" id="profile-link" class="contacts-link" target="_blank" alt="Github"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zackmoberg/" id="profile-link" class="contacts-link" target="_blank"
+                alt="Linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!--Navigation bar-->
+        <nav id="navbar" class="nav">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#about_scroll">ABOUT</a></li>
+                <li class="nav-link"><a href="#projects-header">PROJECTS</a></li>
+                <li class="nav-link"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section class="head_sub">
+            <h1 class="title">ZACK MOBERG</h1>
+            <p class="title_sub">Web Developer & UI/UX Designer</p>
+            <div class="header_nav">
+                <ul>
+                    <li class="title_nav"><a href="#about_scroll" class="left">ABOUT</a></li>
+                    <li class="title_nav"><a href="#projects-header" class="left">PROJECTS</a></li>
+                    <li class="title_nav"><a href="#contact" class="left">CONTACT</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+                style="stroke: none;fill: #32322C;"></path>
+        </svg>
+    </div>
+
+    <!-- About section -->
+    <section class="about_section" id="about_scroll">
+        <!-- <h2 id="about_header">About</h2> -->
+        <div class="about_body">
+            <div class="about_intro_left">
+                Hi.
+            </div>
+            <div class="about_intro_right">
+                I'm Zack.
+            </div>
+            <h1 class="who_header">Who I am</h1>
+            <p>
+                I'm a web developer with a passion for UI/UX design. <br>Living in the heart of Los Angeles, I worked in
+                the hospitality industry for many years, then I decided to change paths and pursue
+                a new
+                career.
+                <br><br>
+                I have learned an array of languages, completed numerous certifications and love every minute of it.
+                Now I work on and create a variety of projects for the ...........sectors. Problem solving comes
+                naturally to me, and I
+                love a good challenge - from
+                learning a new stack to updating and organizing legacy code...even finding that lost semi-colon.
+            </p>
+        </div>
+        <div class="skills">
+            <h3 class="skills_header">What I do</h3>
+            <h5 class="language_header">Front-End:</h5>
+            <p>HTML5, CSS3, Sass, JavaScript, Bootstrap, Materalize, HTML Emails</p>
+            <h5 class="language_header">Back-End:</h5>
+            <p>Node.JS, Express, MongoDB, StackOverflow</p>
+            <h4 class="language_header">
+                Soft Skills:
+            </h4>
+            <p>Marketing, Collaboration, Organization, Leadership</p>
+            <h4 class="language_header">Version Control and Testing:</h4>
+            <p>Git/GitHub, Jest, Postman, Robo 3T </p>
+        </div>
+        <!-- <div class="picture">
+            <img src="./img/imagine.jpg" alt="placeholder image" class="about_pic">
+        </div> -->
+
+    </section>
+
+
+    <!-- Projects header -->
+    <div class="projects-header">
+        <!-- <h2 id="projects-header">These are some of</h2> -->
+        <p class="myprojects">My Stuff</p>
+    </div>
+    <!-- Projects section-->
+
+    <section id="projects" class="projects-section">
+
+        <div class="project-grid">
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/QWygEzW" target="_blank"><img
+                        src="img/fcc_technicaldoc.png"></a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/rNxmMKr" target="_blank"><img
+                        src="img/fcc_Landingpage.png"></a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/vYLLXev" target="_blank"><img src="img/fcc_surveyform.png">
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/MWazXdK" target="_blank"><img src="img/fcc_tributepage.png">
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <section class="bottom">
+        <div class="work-together">
+            <h2>Let's Work Together...</h2>
+            <p>Turning ideas into reality.</p>
+        </div>
+
+        <!--Footer Section-->
+
+        <footer>
+            <ul class="footer-items">
+                <a href="#welcome-section">
+                    <li class="footer-item">Home</li>
+                </a>
+                <a href="#mailto:example@example.com">
+                    <li class="footer-item">Contact</li>
+                </a>
+            </ul>
+
+            <!--Contacts section-->
+
+            <div id="contact" class="contacts">
+                <a href="https://www.freecodecamp.org/zmoberg" id="profile-link" class="contacts-link" target="_blank"
+                    alt="freecodecamp"><i class="fab fa-free-code-camp"></i></a>
+                <a href="https://github.com/ZMoberg" id="profile-link" class="contacts-link" target="_blank"
+                    alt="Github"><i class="fab fa-github"></i></a>
+                <a href="https://codepen.io/ZMoberg" id="profile-link" class="contacts-link" target="_blank"
+                    alt="Codepen"><i class="fab fa-codepen"></i></a>
+                <a href="mailto:example@example.com" id="profile-link" class="contacts-link" target="_blank"
+                    alt="Mail"><i class="fas fa-at"></i></a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./public/app.js"></script>
+</main>
+
 </html>

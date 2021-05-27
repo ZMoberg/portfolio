@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "An evolving space to display my past and current projects for potential employers and clients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZMoberg/portfolio.git"
+  },
+  "keywords": [
+    "test",
+    "copy"
+  ],
+  "author": "Zack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZMoberg/portfolio/issues"
+  },
+  "homepage": "https://github.com/ZMoberg/portfolio#readme"
+}
