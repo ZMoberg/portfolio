@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zack Moberg</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="icon" href="./<favicon-name>.ico" type="image/x-icon">
+    <link href="public/home.css" rel="stylesheet">
+    <link href="https://colorzilla.com/gradient-editor/#ffd65e+57,febf04+100">
+
+</head>
+<main>
+    <!--Welcome Page-->
+
+    <header id="welcome-section">
+        <div class="cover" onclick="closeNav();"></div>
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60" onclick="closeNav()">
+            <path class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+        <div class="top_contacts">
+            <a href="mailto:example@example.com" id="profile-link" class="top_contacts-link" target="_blank"
+                alt="Mail"><i class="fas fa-at"></i></a>
+            <a href="https://github.com/ZMoberg" id="profile-link" class="top_contacts-link" target="_blank"
+                alt="Github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zackmoberg/" id="profile-link" class="top_contacts-link"
+                target="_blank" alt="Linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!--Navigation bar-->
+        <nav id="navbar" class="nav">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#">HOME</a></li>
+                <li class="nav-link"><a href="#about_scroll">ABOUT</a></li>
+                <li class="nav-link"><a href="#projects-scroll">PROJECTS</a></li>
+                <li class="nav-link"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section class="head_sub">
+            <span class="circle three"></span>
+            <h1 class="title">ZACK MOBERG</h1>
+            <p class="title_sub">Web Developer & UI/UX Designer</p>
+            <div class="header_nav">
+                <ul>
+                    <li class="title_nav"><a href="#about_scroll" class="left">ABOUT</a></li>
+                    <li class="title_nav"><a href="#projects" class="left">PROJECTS</a></li>
+                    <li class="title_nav"><a href="#contact" class="left">CONTACT</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Scroll down animation -->
+
+        <div class="mouse_scroll">
+            <a href="#about_scroll">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="scroll_arrows">
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- About section -->
+
+    <section class="about_section" id="about_scroll">
+        <div class="about_body">
+            <div class="about_intro">
+                Hi. I'm Zack.
+            </div>
+            <h1 class="who_header">Who I am</h1>
+            <p class="about-text">
+                I'm a web developer with a passion for UI/UX design. Living in the heart of Los Angeles, I worked in
+                the hospitality industry for many years, then I decided to change paths and pursue
+                a new
+                career.
+                <br><br>
+                I have learned an array of languages, completed numerous certifications and love every minute of it.
+                Now I work on and create a variety of projects for the ...........sectors. Problem solving comes
+                naturally to me, and I
+                love a good challenge - from
+                learning a new stack to updating and organizing legacy code...even finding that lost semi-colon.
+            </p>
+        </div>
+        <div class="skills">
+            <h3 class="skills_header">What I do</h3>
+            <div class="skills_text">
+                <h5 class="language_header">Front-End:</h5>
+                <p>HTML5 / Emails, CSS3, Sass, Bootstrap, JavaScript, GSAP</p>
+                <h5 class="language_header">Back-End:</h5>
+                <p>Node.JS, Express, MongoDB, StackOverflow</p>
+                <h4 class="language_header">
+                    Soft Skills:
+                </h4>
+                <p>Marketing, Collaboration, Organization, Leadership</p>
+                <h4 class="language_header">Version Control and Testing:</h4>
+                <p>Git/GitHub, Jest, Postman, Robo 3T </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects header -->
+
+    <div class="projects-header" id="projects-scroll">
+        <p class="myprojects">My Stuff</p>
+    </div>
+
+    <!-- Projects section-->
+    <img src="./img/wave2.png" alt="">
+    <section class="projects">
+
+        <div class="project one">
+            <h1 class="project-header">Yelp Camp</h1>
+            <h3 class="project-sub-header">
+                An interactive campground review and database.
+            </h3>
+            <p class="project-text">
+                YelpCamp  
+            </p>
+            <img src="./img/placeHolder.jpg" alt="" class="projectImg img1">
+        </div>
+
+    </section>
+
+    <!-- <section id="projects" class="projects-section">
+
+        <div class="project-grid">
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/QWygEzW" target="_blank"><img
+                        src="img/fcc_technicaldoc.png"></a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/rNxmMKr" target="_blank"><img
+                        src="img/fcc_Landingpage.png"></a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/vYLLXev" target="_blank"><img src="img/fcc_surveyform.png">
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/ZMoberg/full/MWazXdK" target="_blank"><img src="img/fcc_tributepage.png">
+                </a>
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- Footer break -->
+
+    <section class="bottom">
+        <div class="work-together">
+            <h2>Interested in Working Together..?</h2>
+            <p>Turning your ideas into reality.</p>
+        </div>
+
+        <!--Footer Section-->
+
+        <footer>
+            <!-- <ul class="footer-items">
+                <a href="#welcome-section">
+                    <li class="footer-item">Home</li>
+                </a>
+                <a href="#mailto:example@example.com">
+                    <li class="footer-item">Contact</li>
+                </a>
+            </ul> -->
+
+            <!--Contacts section-->
+
+            <!-- <div id="contact" class="contacts">
+                <a href="mailto:example@example.com" id="profile-link" class="contacts-link" target="_blank"
+                    alt="Mail"><i class="fas fa-at"></i></a>
+                <a href="https://github.com/ZMoberg" id="profile-link" class="contacts-link" target="_blank"
+                    alt="Github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/zackmoberg/" id="profile-link" class="top_contacts-link"
+                    target="_blank" alt="Linkedin"><i class="fab fa-linkedin"></i></a>
+
+            </div> -->
+
+
+
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Inspiration can come from anywhere and take on many forms, what does yours look like?
+                        Whether you have an idea or project you would like to collaborate on, send a message and
+                        reach out
+                        to me.
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <img src="img/location.png" class="icon" alt="" />
+                            <p>Los Angeles, California</p>
+                        </div>
+                        <div class="information">
+                            <a href="mailto:zmoberg@gmail.com"><img src="img/email.png" class="icon two" alt="" /></a>
+                            <p>zmoberg@gmail.com</p>
+
+                        </div>
+                    </div>
+                    <!-- <span class="circle-border"></span> -->
+                    <div class="social-media">
+                        <p>Connect: </p>
+                        <div class="social-icons">
+                            <a href="https://github.com/ZMoberg"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/zackmoberg/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="index.html" autocomplete="off">
+                        <h3 class="title">Contact</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" />
+                            <label for="">Full Name</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" />
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+
+    <script src="./public/app.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+</main>
+
+</html>
