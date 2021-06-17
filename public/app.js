@@ -3,12 +3,9 @@ const ham = document.querySelector(".ham");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-<<<<<<< HEAD
 const modal = document.querySelectorAll(".modal1")
 
 
-=======
->>>>>>> 3f11f16ff1c38ea5c55b942e2d090750b14796e3
 // Mouseover event on landing page title
 
 let newAns = "";
@@ -35,12 +32,7 @@ function openNav() {
     links.forEach(link => {
       link.classList.toggle("fade");
      });
-<<<<<<< HEAD
      document.body.classList.toggle('noscroll'); 
-=======
-     document.body.classList.toggle('noscroll');
-     
->>>>>>> 3f11f16ff1c38ea5c55b942e2d090750b14796e3
   }
   
   function closeNav() {
@@ -61,7 +53,6 @@ function openNav() {
       document.body.classList.remove('noscroll');
       document.body.classList.remove('sidenav-active');
     }
-<<<<<<< HEAD
   })
 
   //About Section scrollTrigger
@@ -169,6 +160,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-=======
-  })
->>>>>>> 3f11f16ff1c38ea5c55b942e2d090750b14796e3
