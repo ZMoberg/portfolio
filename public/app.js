@@ -144,6 +144,8 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   const slides = document.getElementsByClassName("projectSlides");
+  // let slides = [".projectSlides1", "projectSlides2"]
+  
   let dots = document.getElementsByClassName("projectSlider__dots--dot");
   if (n > slides.length) {
     slideIndex = 1
