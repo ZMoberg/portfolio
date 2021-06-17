@@ -64,7 +64,7 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 5000;
+    z-index: 9999;
     animation: mouse-scroll 2s ease-in;
 }
 
@@ -157,6 +157,7 @@ img {
 nav {
     height: 10vh;
     position: absolute;
+    z-index: 10000;
 }
 
 .nav-links a {
@@ -189,7 +190,7 @@ nav {
     -webkit-clip-path: circle(100px at -10% 90%);
     transition: all .3s ease-out;
     pointer-events: none;
-    z-index: 3;
+    z-index: 35;
 }
 
 .nav-links.open {
@@ -231,12 +232,13 @@ li.fade {
     -ms-user-select: none;
     user-select: none;
     position: fixed;
-    z-index: 5000;
+    z-index: 5;
     animation: mouse-scroll 1s ease-in;
 }
 
 .hamRotate.active {
     transform: rotate(45deg);
+    background-color: transparent;
 }
 
 .hamRotate180.active {
@@ -596,7 +598,7 @@ a.left:hover:before {
     left: 0;
     right: 0;
     height: 100vh;
-    z-index: 4;
+    z-index: 2;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -684,6 +686,7 @@ table td {
     /* Required for Safari */
     position: sticky;
     bottom: 30%;
+    opacity: 1;
 }
 
 /*--- Project Section ---*/
@@ -701,7 +704,7 @@ table td {
     /* or inline-flex */
     flex-wrap: wrap;
     justify-content: space-around;
-    z-index: 9999;
+    z-index: 2;
     padding: 9.75em 0;
 }
 
@@ -816,7 +819,7 @@ table td {
     font-family: "Poppins", sans-serif;
     width: 100%;
     background-color: rgb(203, 243, 241);
-    z-index: 1000;
+    z-index: 2;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -855,11 +858,6 @@ table td {
     left: 50%;
     z-index: 0;
     overflow-x: hidden;
-}
-
-#three-overflow {
-    overflow: hidden;
-
 }
 
 .contact-form:before {
@@ -1071,6 +1069,7 @@ textarea.input {
     bottom: -35%;
     right: 50px;
     opacity: 0.3;
+    z-index: 1000;
 }
 
 @media (max-width: 850px) {
@@ -1333,7 +1332,7 @@ textarea.input {
 }
 
 /* Fading animation */
-.fade {
+/* .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -1358,4 +1357,4 @@ textarea.input {
     to {
         opacity: 1;
     }
-}
+} */
