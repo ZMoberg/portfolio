@@ -1225,12 +1225,12 @@ textarea.input {
 .modal-window1 h3 {
     font-size: 2.8rem;
     /* text-align: center; */
-    margin: 2.5%;
 }
 
 .modal-window1 p {
     text-align: center;
     width: 90%;
+    margin-top: 3.5%;
 }
 
 .buttons {
@@ -1312,6 +1312,9 @@ textarea.input {
 
 /* The dots/bullets/indicators */
 .projectSlider__dots {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
     text-align: center;
 }
 
