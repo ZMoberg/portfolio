@@ -566,20 +566,25 @@
                     <span class="circle one"></span>
                     <span class="circle two"></span>
 
-                    <form action="index.html" autocomplete="off">
+                    <form action="index.html" autocomplete="off" name="contact-form">
                         <h3 class="title">Contact</h3>
                         <div class="input-container">
                             <input type="text" name="name" class="input" />
+                            <div class="error hide">
+                                Your name is required.
+                            </div>
                             <label for="">Full Name</label>
                             <span>Username</span>
                         </div>
                         <div class="input-container">
                             <input type="email" name="email" class="input" />
+                            <div class="error hide">Email is invalid.</div>
                             <label for="">Email</label>
                             <span>Email</span>
                         </div>
                         <div class="input-container textarea">
                             <textarea name="message" class="input"></textarea>
+                            <div class="error hidden">Message is required.</div>
                             <label for="">Message</label>
                             <span>Message</span>
                         </div>
