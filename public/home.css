@@ -139,7 +139,7 @@ img {
     }
 }
 
-#welcome-section {
+.landing-page {
     height: 100vh;
     width: auto;
     position: relative;
@@ -150,6 +150,8 @@ img {
     color: rgb(203, 243, 241);
     z-index: 1;
     min-height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 /*---Navigation Bar ---*/
@@ -854,10 +856,15 @@ table td {
     /* position: absolute; */
     width: 60em;
     height: 60em;
-    top: 120px;
-    left: 50%;
+    right: -25%;
     z-index: 0;
+}
+
+#three-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow-x: hidden;
+    display: inline-block;
 }
 
 .contact-form:before {
@@ -911,7 +918,7 @@ textarea.input {
 
 .input-container label {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 15px;
     transform: translateY(-50%);
     padding: 0 0.4rem;
@@ -970,13 +977,16 @@ textarea.input {
     background-color: #13C4A3;
     top: 50%;
     transform: translateY(-50%);
+
 }
 
 .input-container span:before {
+
     left: 50%;
 }
 
 .input-container span:after {
+
     right: 50%;
 }
 
@@ -985,6 +995,7 @@ textarea.input {
     transform: translateY(-50%);
     left: 25px;
     font-size: 0.8rem;
+
 }
 
 .input-container.focus span:before,
@@ -1028,7 +1039,7 @@ textarea.input {
 /* validation styling*/
 
 .invalid {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .error {
@@ -1236,7 +1247,7 @@ textarea.input {
 
 .modal-x:hover {
     transform: scale(1.05);
-    
+
 }
 
 .modal-window1 h3 {
