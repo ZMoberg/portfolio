@@ -188,7 +188,6 @@ let shouldValidate = false;
 let isFormValid = false;
 
 const validateInputs = () => {
-  console.log("we are here");
   if (!shouldValidate) return;
 
   isFormValid = true;

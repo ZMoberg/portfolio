@@ -24,6 +24,7 @@ main {
     /* font-family: 'Rubik', sans-serif; */
     color: rgb(203, 243, 241);
     background-color: #32322C;
+    overflow-x: hidden;
 }
 
 ul {
@@ -41,7 +42,7 @@ img {
 
 /*---Welcome Section ---*/
 
-#welcome-section {
+.landing-page {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -51,6 +52,8 @@ img {
     background-position: center;
     color: rgb(203, 243, 241);
     min-height: 500px;
+    z-index: 1;
+    display: flex;
 
 }
 
@@ -139,20 +142,6 @@ img {
     }
 }
 
-.landing-page {
-    height: 100vh;
-    width: auto;
-    position: relative;
-    background-color: #32322C;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: rgb(203, 243, 241);
-    z-index: 1;
-    min-height: 500px;
-    display: flex;
-    flex-flow: row nowrap;
-}
 
 /*---Navigation Bar ---*/
 
