@@ -4,6 +4,7 @@ This is my first rendition of my personal portfolio. My goal for this project wa
 - Technologies Used
 
   -HTML
+  <br>
   -CSS
   -JavaScript
   -Gsap's 'ScrollTrigger' event scrolling tool
