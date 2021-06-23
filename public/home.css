@@ -24,7 +24,7 @@ main {
     /* font-family: 'Rubik', sans-serif; */
     color: rgb(203, 243, 241);
     background-color: #32322C;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 ul {
@@ -91,7 +91,6 @@ img {
     position: sticky;
     top: 0;
     max-height: 500px;
-    height: 50px;
 
 }
 
@@ -682,6 +681,7 @@ table td {
     position: -webkit-sticky;
     /* Required for Safari */
     position: sticky;
+    top: 10%;
     bottom: 30%;
     opacity: 1;
 }
