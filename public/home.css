@@ -24,7 +24,7 @@ main {
     /* font-family: 'Rubik', sans-serif; */
     color: rgb(203, 243, 241);
     background-color: #32322C;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ul {
@@ -52,8 +52,6 @@ img {
     background-position: center;
     color: rgb(203, 243, 241);
     min-height: 500px;
-    z-index: 1;
-    display: flex;
 
 }
 
@@ -85,12 +83,20 @@ img {
 .head_sub {
     max-width: 50%;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding-top: 20rem;
     text-align: center;
     position: -webkit-sticky;
     /* Required for Safari */
     position: sticky;
     top: 0;
+    max-height: 500px;
+    height: 50px;
+    
+}
+
+.scroller {
+    overflow: auto;
 }
 
 .title {
@@ -847,13 +853,6 @@ table td {
     height: 60em;
     right: -25%;
     z-index: 0;
-}
-
-#three-overflow {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    display: inline-block;
 }
 
 .contact-form:before {
