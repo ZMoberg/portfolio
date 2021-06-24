@@ -731,7 +731,7 @@ table td {
 
 .card:hover {
     transform: translateY(5px);
-
+    cursor: pointer;
 }
 
 .card:before {
@@ -777,6 +777,8 @@ table td {
     opacity: 1;
     transform: translateY(10px);
 }
+
+
 
 .card .info h1 {
     margin: .5rem;
