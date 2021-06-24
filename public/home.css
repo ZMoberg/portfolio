@@ -701,7 +701,7 @@ table td {
     /* or inline-flex */
     flex-wrap: wrap;
     justify-content: space-around;
-    z-index: 2;
+    z-index: 1;
     padding: 9.75em 0;
 }
 
