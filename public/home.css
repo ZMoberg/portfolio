@@ -1092,8 +1092,12 @@ textarea.input {
     opacity: 0.3;
 }
 
-@media (max-width: 850px) {
+@media (min-width: 768px) {
     .form {
+        grid-template-columns: 1fr;
+    }
+
+    .project-section {
         grid-template-columns: 1fr;
     }
 
@@ -1119,10 +1123,12 @@ textarea.input {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 640px) {
     .container {
         padding: 1.5rem;
     }
+
+    .project-section {}
 
     .contact-info:before {
         display: none;
