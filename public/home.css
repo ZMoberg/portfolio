@@ -606,7 +606,7 @@ a.left:hover:before {
     position: relative;
     background: url("../img/waveface3.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: #32322C;
     font-family: 'Hind Madurai', sans-serif;
     z-index: 1;
@@ -695,7 +695,7 @@ table td {
     margin: auto;
     background-image: url("../img/wavenoface2.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Hind Madurai', sans-serif;
     display: flex;
     /* or inline-flex */
@@ -1092,14 +1092,12 @@ textarea.input {
     opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 850px) {
     .form {
         grid-template-columns: 1fr;
     }
 
-    .project-section {
-        grid-template-columns: 1fr;
-    }
+
 
     .contact-info:before {
         bottom: initial;
@@ -1123,12 +1121,10 @@ textarea.input {
     }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 480px) {
     .container {
         padding: 1.5rem;
     }
-
-    .project-section {}
 
     .contact-info:before {
         display: none;
