@@ -90,10 +90,22 @@ function openNav() {
       start: "top, 80%",
       end: "bottom, -95%",
       toggleActions: "play reset restart reset",
+      
     }
   });
 
   tlMyStuff.to(".myStuff-header", {opacity: 1})
+
+  const tlWorkTogether = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-section",
+      start: "top, 80%",
+      end: "bottom, -95%",
+      toggleActions: "play reset restart reset",
+    }
+  });
+
+  tlWorkTogether.to(".work-together", {opacity: 1})
 
 document.addEventListener('click', function (e) {
   e = e || window.event;

@@ -28,7 +28,7 @@ img {
 /*---Welcome Section ---*/
 
 .landing-page {
-    height: 110vh;
+    height: 130vh;
     width: 100%;
     position: relative;
     background-image: url('../img/textured-wave-background.jpg');
@@ -598,6 +598,7 @@ a.left:hover:before {
     color: #32322C;
     font-family: 'Hind Madurai', sans-serif;
     z-index: 1;
+    overflow: hidden;
 }
 
 .about_intro {
@@ -640,27 +641,32 @@ a.left:hover:before {
     opacity: 0;
     z-index: 1;
     width: 100%;
+
 }
 
 table caption {
     font-size: 5.5rem;
     font-weight: bold;
     margin-bottom: 4rem;
+
 }
 
 th {
     font-size: 2.5rem;
+
 }
 
 tbody {
     position: absolute;
     top: 121%;
+
 }
 
 table td {
     font-size: 2.5rem;
     text-align: center;
     padding: .7rem .8rem;
+
 }
 
 /* Projects Header */
@@ -991,6 +997,9 @@ table td {
     align-items: center;
     margin: 4rem;
     text-align: center;
+    opacity: 0;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 /* Footer / Contacts */
@@ -1123,7 +1132,7 @@ textarea.input {
 }
 
 .btn {
-    padding: 1rem 1.8rem;
+    padding: 1.4rem 2.1rem;
     background-color: rgb(203, 243, 241);
     border: 2px solid rgb(203, 243, 241);
     font-size: 2.5rem;
