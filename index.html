@@ -15,19 +15,19 @@
 
     <header class="landing-page" id="welcome-section">
         <div class="cover" onclick="closeNav();"></div>
-        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60" onclick="closeNav()">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="150" onclick="closeNav()">
             <path class="line top"
                 d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
             <path class="line middle" d="m 30,50 h 40" />
             <path class="line bottom"
                 d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
         </svg>
-        <div class="top_contacts">
+        <!-- <div class="top_contacts">
             <a href="https://github.com/ZMoberg" id="profile-link" class="top_contacts-link" target="_blank"
                 alt="Github"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/zackmoberg/" id="profile-link" class="top_contacts-link"
                 target="_blank" alt="Linkedin"><i class="fab fa-linkedin"></i></a>
-        </div>
+        </div> -->
 
         <!--Navigation bar-->
         <nav id="navbar" class="nav">
@@ -37,12 +37,11 @@
                 <li class="nav-link"><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <span class="circle three"></span>
 
         <section class="head_sub">
             <div class="scroller">
                 <h1 class="title">ZACK MOBERG</h1>
-                <p class="title_sub">Web Developer & UI/UX Designer</p>
+                <p class="title_sub">Web Developer <br> & UI/UX Designer</p>
                 <div class="header_nav">
                     <ul>
                         <li class="title_nav"><a href="#about_scroll" class="left">ABOUT</a></li>
@@ -83,11 +82,7 @@
                 me and I enjoy bringing virtual ideas into reality. Helping others chase their dreams while gaining
                 knowledge to
                 reach my own goals, is what drives me.
-                <br><br>
-                It's important when building scalable, responsive sites and applications to use simple and readable
-                logic. Transparency is critical in communication and production, and is a major factor in a successful
-                product. I focus on simplicity, because often times you don't need a nuke to fix a misplaced
-                semicolon.
+
             </p>
         </div>
         <table class="skills">
@@ -149,385 +144,383 @@
     <!-- Projects section-->
 
     <section class="project-section">
-
-        <div class="wrapper">
-            <div class="card" data-target="simpleModal_1" data-toggle="modal1">
-                <img src="./img/YelpCamp.png" alt="">
-                <div class="info">
-                    <h1>YelpCamp</h1>
+        <div class="modals">
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_1" data-toggle="modal1">
+                    <img src="./img/YelpCamp.png" alt="">
+                    <div class="info">
+                        <h1>YelpCamp</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="simpleModal_1" class="modal1">
+            <div id="simpleModal_1" class="modal1">
 
-            <div class="modal-window1">
+                <div class="modal-window1">
 
-                <div class="project-slider__container">
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">1 / 3</div>
-                        <img src="./img/YelpCamp.png">
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">1 / 3</div>
+                            <img src="./img/YelpCamp.png">
 
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">2 / 3</div>
+                            <img src="./img/reviewPage.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">3 / 3</div>
+                            <img src="./img/login.png">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="projectSlider__dots" style="text-align:center">
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
 
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">2 / 3</div>
-                        <img src="./img/reviewPage.png">
-
+                    <h3>YelpCamp</h3>
+                    <p>A campground review site created to plan, inspire and share your latest trip. By implementing
+                        user
+                        authentication it creates a personal and secure experience. It allows the user to post a full
+                        campground review with photo sharing as well as leave reviews on previously shared campgrounds.
+                        With
+                        the addition of an interactive map the user is able to save and share specific coordinates of
+                        their
+                        favorite camp
+                        spots or plan their next getaway.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://murmuring-castle-93653.herokuapp.com/" target="_blank"><button
+                                class="modal-buttons">Live Project</button></a>
+                        <a href="https://github.com/ZMoberg/YelpCamp" target="_blank"><button
+                                class="modal-buttons">Source
+                                Code</button></a>
                     </div>
+                </div>
+            </div>
 
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">3 / 3</div>
-                        <img src="./img/login.png">
-
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_2" data-toggle="modal1">
+                    <img src="./img/fcc_Landingpage.png" alt="">
+                    <div class="info">
+                        <h1>RTIC</h1>
                     </div>
+                </div>
+            </div>
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div id="simpleModal_2" class="modal1">
+
+                <div class="modal-window1">
+
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">1 / 3</div>
+                            <img src="./img/fcc_Landingpage.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">2 / 3</div>
+                            <img src="./img/landing-products.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">3 / 3</div>
+                            <img src="./img/card2.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
                     <div class="projectSlider__dots" style="text-align:center">
                         <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
                         <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
                         <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
                     </div>
-                </div>
-                <br>
 
-
-
-
-
-                <h3>YelpCamp</h3>
-                <p>A campground review site created to plan, inspire and share your latest trip. By implementing user
-                    authentication it creates a personal and secure experience. It allows the user to post a full
-                    campground review with photo sharing as well as leave reviews on previously shared campgrounds. With
-                    the addition of an interactive map the user is able to save and share specific coordinates of their
-                    favorite camp
-                    spots or plan their next getaway.
-                </p>
-                <div class="buttons">
-                    <a href="https://murmuring-castle-93653.herokuapp.com/" target="_blank"><button
-                            class="modal-buttons">Live Project</button></a>
-                    <a href="https://github.com/ZMoberg/YelpCamp" target="_blank"><button class="modal-buttons">Source
-                            Code</button></a>
+                    <h3>RTIC</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
+                        veniam
+                        iure
+                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
+                        perspiciatis.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
+                        <a href="https://github.com/ZMoberg/LandingPage-Practice.gity" target="_blank"><button
+                                class="modal-buttons">Source
+                                Code</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="wrapper">
-            <div class="card" data-target="simpleModal_2" data-toggle="modal1">
-                <img src="./img/fcc_Landingpage.png" alt="">
-                <div class="info">
-                    <h1>RTIC</h1>
+
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_3" data-toggle="modal1">
+                    <img src="./img/card3.jpg" alt="">
+                    <div class="info">
+                        <h1>Coming Soon</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="simpleModal_2" class="modal1">
+            <div id="simpleModal_3" class="modal1">
 
-            <div class="modal-window1">
+                <div class="modal-window1">
 
-                <div class="project-slider__container">
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">1 / 3</div>
-                        <img src="./img/fcc_Landingpage.png">
 
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">1 / 3</div>
+                            <img src="./img/YelpCamp.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">2 / 3</div>
+                            <img src="./img/card1.jpg">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">3 / 3</div>
+                            <img src="./img/card2.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div class="projectSlider__dots" style="text-align:center">
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
                     </div>
 
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">2 / 3</div>
-                        <img src="./img/landing-products.png">
-
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
+                        veniam
+                        iure
+                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
+                        perspiciatis.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
+                        <a href="#" target="_blank"><button class="modal-buttons">Source
+                                Code</button></a>
                     </div>
-
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">3 / 3</div>
-                        <img src="./img/card2.jpg">
-
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div class="projectSlider__dots" style="text-align:center">
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                </div>
-
-                <h3>RTIC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
-                    veniam
-                    iure
-                    sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
-                    perspiciatis.
-                </p>
-                <div class="buttons">
-                    <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
-                    <a href="https://github.com/ZMoberg/LandingPage-Practice.gity" target="_blank"><button
-                            class="modal-buttons">Source
-                            Code</button></a>
                 </div>
             </div>
-        </div>
 
-
-        <div class="wrapper">
-            <div class="card" data-target="simpleModal_3" data-toggle="modal1">
-                <img src="./img/card3.jpg" alt="">
-                <div class="info">
-                    <h1>Coming Soon</h1>
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_4" data-toggle="modal1">
+                    <img src="./img/card4.jpg" alt="">
+                    <div class="info">
+                        <h1>Coming Soon</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="simpleModal_3" class="modal1">
+            <div id="simpleModal_4" class="modal1">
 
-            <div class="modal-window1">
+                <div class="modal-window1">
 
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">1 / 3</div>
+                            <img src="./img/YelpCamp.png">
 
-                <div class="project-slider__container">
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">1 / 3</div>
-                        <img src="./img/YelpCamp.png">
+                        </div>
 
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">2 / 3</div>
+                            <img src="./img/card1.jpg">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">3 / 3</div>
+                            <img src="./img/card2.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div class="projectSlider__dots" style="text-align:center">
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
                     </div>
 
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">2 / 3</div>
-                        <img src="./img/card1.jpg">
 
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
+                        veniam
+                        iure
+                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
+                        perspiciatis.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
+                        <a href="#" target="_blank"><button class="modal-buttons">Source
+                                Code</button></a>
                     </div>
-
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">3 / 3</div>
-                        <img src="./img/card2.jpg">
-
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div class="projectSlider__dots" style="text-align:center">
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                </div>
-
-                <h3>Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
-                    veniam
-                    iure
-                    sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
-                    perspiciatis.
-                </p>
-                <div class="buttons">
-                    <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
-                    <a href="#" target="_blank"><button class="modal-buttons">Source
-                            Code</button></a>
                 </div>
             </div>
-        </div>
 
-        <div class="wrapper">
-            <div class="card" data-target="simpleModal_4" data-toggle="modal1">
-                <img src="./img/card4.jpg" alt="">
-                <div class="info">
-                    <h1>Coming Soon</h1>
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_5" data-toggle="modal1">
+                    <img src="./img/card5.jpg" alt="">
+                    <div class="info">
+                        <h1>Coming Soon</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="simpleModal_4" class="modal1">
+            <div id="simpleModal_5" class="modal1">
 
-            <div class="modal-window1">
+                <div class="modal-window1">
 
-                <div class="project-slider__container">
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">1 / 3</div>
-                        <img src="./img/YelpCamp.png">
 
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">1 / 3</div>
+                            <img src="./img/YelpCamp.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">2 / 3</div>
+                            <img src="./img/card1.jpg">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">3 / 3</div>
+                            <img src="./img/card2.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div class="projectSlider__dots" style="text-align:center">
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
                     </div>
 
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">2 / 3</div>
-                        <img src="./img/card1.jpg">
-
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
+                        veniam
+                        iure
+                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
+                        perspiciatis.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
+                        <a href="#" target="_blank"><button class="modal-buttons">Source
+                                Code</button></a>
                     </div>
-
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">3 / 3</div>
-                        <img src="./img/card2.jpg">
-
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div class="projectSlider__dots" style="text-align:center">
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                </div>
-
-
-                <h3>Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
-                    veniam
-                    iure
-                    sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
-                    perspiciatis.
-                </p>
-                <div class="buttons">
-                    <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
-                    <a href="#" target="_blank"><button class="modal-buttons">Source
-                            Code</button></a>
                 </div>
             </div>
-        </div>
 
-        <div class="wrapper">
-            <div class="card" data-target="simpleModal_5" data-toggle="modal1">
-                <img src="./img/card5.jpg" alt="">
-                <div class="info">
-                    <h1>Coming Soon</h1>
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_6" data-toggle="modal1">
+                    <img src="./img/card6.jpg" alt="">
+                    <div class="info">
+                        <h1>HTML Email Templates</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="simpleModal_5" class="modal1">
+            <div id="simpleModal_6" class="modal1">
 
-            <div class="modal-window1">
+                <div class="modal-window1">
 
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">1 / 3</div>
+                            <img src="./img/YelpCamp.png">
 
-                <div class="project-slider__container">
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">1 / 3</div>
-                        <img src="./img/YelpCamp.png">
+                        </div>
 
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">2 / 3</div>
+                            <img src="./img/card1.jpg">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <div class="project-slider__numbertext">3 / 3</div>
+                            <img src="./img/card2.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div class="projectSlider__dots" style="text-align:center">
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
                     </div>
 
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">2 / 3</div>
-                        <img src="./img/card1.jpg">
 
-                    </div>
-
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">3 / 3</div>
-                        <img src="./img/card2.jpg">
-
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div class="projectSlider__dots" style="text-align:center">
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                </div>
-
-                <h3>Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
-                    veniam
-                    iure
-                    sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
-                    perspiciatis.
-                </p>
-                <div class="buttons">
-                    <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
-                    <a href="#" target="_blank"><button class="modal-buttons">Source
-                            Code</button></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="card" data-target="simpleModal_6" data-toggle="modal1">
-                <img src="./img/card6.jpg" alt="">
-                <div class="info">
-                    <h1>HTML Email Templates</h1>
-                </div>
-            </div>
-        </div>
-
-        <div id="simpleModal_6" class="modal1">
-
-            <div class="modal-window1">
-
-                <div class="project-slider__container">
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">1 / 3</div>
-                        <img src="./img/YelpCamp.png">
-
-                    </div>
-
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">2 / 3</div>
-                        <img src="./img/card1.jpg">
-
-                    </div>
-
-                    <div class="projectSlides fade">
-                        <div class="project-slider__numbertext">3 / 3</div>
-                        <img src="./img/card2.jpg">
-
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div class="projectSlider__dots" style="text-align:center">
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                    <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                </div>
-
-
-                <h3>HTML Email Templates</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
-                    veniam
-                    iure
-                    sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
-                    perspiciatis.
-                </p>
-                <div class="buttons">
-                    <a href="#" target="_blank"><button class="modal-buttons">Demos</button></a>
-                    <!-- <a href="#" target="_blank"><button class="modal-buttons">Source
+                    <h3>HTML Email Templates</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
+                        veniam
+                        iure
+                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
+                        perspiciatis.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" target="_blank"><button class="modal-buttons">Demos</button></a>
+                        <!-- <a href="#" target="_blank"><button class="modal-buttons">Source
                             Code</button></a> -->
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Footer break -->
-
+    <div class="work-together">
+        <h2>Interested in Working Together..?</h2>
+    </div>
     <section class="bottom" id="contact">
-        <div class="work-together">
-            <h2>Interested in Working Together..?</h2>
-            <p>Turning your ideas into reality.</p>
-        </div>
+
 
         <!--Footer / Contact Section-->
 
@@ -535,12 +528,11 @@
         <div class="container">
             <div class="form">
                 <div class="contact-info">
-                    <h3 class="title">Let's get in touch</h3>
+                    <h3 class="contact-title">Let's get in touch</h3>
                     <p class="text">
                         Inspiration can come from anywhere and take on many forms, what does yours look like?
-                        Whether you have an idea or project you would like to collaborate on, send a message and
-                        reach out
-                        to me.
+                        Whether you have an idea or project you would like to collaborate on, send me a message and
+                        reach out.
                     </p>
 
                     <div class="info">
@@ -571,7 +563,7 @@
                     <span class="circle two"></span>
 
                     <form action="index.html" autocomplete="off">
-                        <h3 class="title">Contact me</h3>
+                        <h3 class="connect-title">Contact me</h3>
                         <div class="input-container">
                             <input type="text" name="name" class="input" />
                             <label for="">Full Name</label>

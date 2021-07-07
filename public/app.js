@@ -84,6 +84,16 @@ function openNav() {
 
   // Project Section Test
 
+  const tlMyStuff = gsap.timeline({
+    scrollTrigger : {
+      trigger: ".skills",
+      start: "top, 80%",
+      end: "bottom, -95%",
+      toggleActions: "play reset restart reset",
+    }
+  });
+
+  tlMyStuff.to(".myStuff-header", {opacity: 1})
 
 document.addEventListener('click', function (e) {
   e = e || window.event;
