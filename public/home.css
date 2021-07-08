@@ -1015,7 +1015,6 @@ table td {
     height: 100%;
     /* max-width: 820px; */
     background-color: rgb(203, 243, 241);
-    border-radius: 10px;
     z-index: 1000;
     overflow: hidden;
     display: grid;
@@ -1087,11 +1086,12 @@ form {
 }
 
 .input {
+    font-size: 3.5rem;
     width: 100%;
     outline: none;
     border: 4px solid rgb(203, 243, 241);
     background: none;
-    padding: 2rem 1.2rem;
+    padding: 1rem 1.2rem;
     color: rgb(203, 243, 241);
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -1152,7 +1152,7 @@ textarea.input {
     top: 0;
     left: 25px;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 4rem;
     padding: 0 0.4rem;
     color: transparent;
     pointer-events: none;
@@ -1166,7 +1166,7 @@ textarea.input {
     width: 10%;
     opacity: 0;
     transition: 0.3s;
-    height: 5px;
+    height: 25px;
     background-color: #13C4A3;
     top: 50%;
     transform: translateY(-50%);
@@ -1185,7 +1185,7 @@ textarea.input {
     top: 0;
     transform: translateY(-50%);
     left: 25px;
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
 
 .input-container.focus span:before,
@@ -1207,7 +1207,7 @@ textarea.input {
     font-size: 3rem;
     text-align: center;
     color: #333;
-    margin: 1.5rem 0 2rem 0;
+    width: 95%;
 }
 
 .info {
