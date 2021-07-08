@@ -99,8 +99,8 @@ function openNav() {
   const tlWorkTogether = gsap.timeline({
     scrollTrigger: {
       trigger: ".project-section",
-      start: "top, 80%",
-      end: "bottom, -95%",
+      start: "top, 30%",
+      end: "bottom, -295%",
       toggleActions: "play reset restart reset",
     }
   });

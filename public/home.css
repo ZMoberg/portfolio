@@ -179,8 +179,8 @@ nav {
 
 .nav-links.open {
     background: #13C4A3;
-    clip-path: circle(120px at -10% 90%);
-    -webkit-clip-path: circle(80rem at -10% 70%);
+    clip-path: circle(120px at -10% 70%);
+    -webkit-clip-path: circle(75rem at -10% 90%);
     pointer-events: all;
     z-index: 9999;
 }
@@ -693,14 +693,10 @@ table td {
     background-image: url("../img/wavenoface2.png");
     background-repeat: no-repeat;
     background-size: cover;
-
     font-family: 'Hind Madurai', sans-serif;
     display: flex;
-    /* or inline-flex */
     flex-direction: column;
-    /* justify-content: space-around; */
     z-index: 1;
-    padding: 3.75em 0;
 }
 
 .wrapper {
@@ -980,26 +976,25 @@ table td {
     background-color: #717171;
 }
 
+/*--- Work Together ---*/
+
+.work-together {
+    font-size: 5.5rem;
+    margin: 0 auto;
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 1%;
+    bottom: 20%;
+    opacity: 0;
+    margin-bottom: 100px;
+}
+
 /*--- Bottom ---*/
 
 .bottom {
     height: 105vh;
     /* background-color: rgb(76, 96, 133); */
-}
-
-/*--- Work Together ---*/
-
-.work-together {
-    font-size: 5.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem;
-    text-align: center;
-    opacity: 0;
-    position: sticky;
-    position: -webkit-sticky;
 }
 
 /* Footer / Contacts */
