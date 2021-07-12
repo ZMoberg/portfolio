@@ -84,6 +84,9 @@ function openNav() {
 
   // Project Section Test
 
+
+  // timeline not necessary for single events
+
   const tlMyStuff = gsap.timeline({
     scrollTrigger : {
       trigger: ".skills",
@@ -95,6 +98,8 @@ function openNav() {
   });
 
   tlMyStuff.to(".myStuff-header", {opacity: 1})
+
+// timeline not necessary for single events
 
   const tlWorkTogether = gsap.timeline({
     scrollTrigger: {
@@ -145,7 +150,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   const slides = document.getElementsByClassName("projectSlides");
-  // let slides = [".projectSlides1", "projectSlides2"]
+  // let slides = {[".projectSlides1", "projectSlides2"]}
   
   let dots = document.getElementsByClassName("projectSlider__dots--dot");
   if (n > slides.length) {
@@ -189,4 +194,3 @@ inputs.forEach((input) => {
 
 
 // Contact form authentication and submission
-

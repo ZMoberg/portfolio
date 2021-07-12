@@ -999,6 +999,14 @@ table td {
 
 /* Footer / Contacts */
 
+.close-modal {
+    position: absolute;
+    top: 1.5%;
+    right: 2%;
+    font-size: 3em;
+    color: rgb(231, 245, 244);
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -1279,3 +1287,29 @@ textarea.input {
     right: 50px;
     opacity: 0.3;
 }
+
+/* mobile styles */
+
+@media (min-width: 640px) {
+    .landing-page {}
+
+    .head_sub {}
+
+    .title {
+        font-size: 6rem;
+    }
+}
+
+/* tablet
+@media (min-with: 768px) {
+this media query still gets background-color styles from mobile
+
+}
+
+laptop
+@media (min-width: 1024px) {
+this media query overriedes the red from mobile
+  body {
+    background-color: white
+  }
+}  */
