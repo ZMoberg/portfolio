@@ -54,13 +54,11 @@ img {
     z-index: 9999;
     animation: mouse-scroll 2s ease-in;
 }
-
 .top_contacts-link {
     color: rgb(203, 243, 241);
     font-size: 4.5rem;
     margin: 2px 25px;
 }
-
 .top_contacts-link:hover {
     color: #13C4A3;
     transform: scale(1.05);
@@ -77,7 +75,7 @@ img {
     /* Required for Safari */
     position: sticky;
     top: 0;
-    max-height: 1050px;
+    max-height: 700px;
 
 }
 
@@ -1303,9 +1301,7 @@ textarea.input {
 /* tablet
 @media (min-with: 768px) {
 this media query still gets background-color styles from mobile
-
 }
-
 laptop
 @media (min-width: 1024px) {
 this media query overriedes the red from mobile
