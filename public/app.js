@@ -4,6 +4,8 @@ const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
 const modal = document.querySelectorAll(".modal1")
+const allSlides = [];
+
 
 
 // Mouseover event on landing page title
@@ -120,6 +122,7 @@ document.addEventListener('click', function (e) {
       if (target.hasAttribute('data-target')) {
           var m_ID = target.getAttribute('data-target');
           document.getElementById(m_ID).classList.add('open1');
+          showSlides(0);
           e.preventDefault();
       }
   }
@@ -136,28 +139,52 @@ document.addEventListener('click', function (e) {
 // Image Slider
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+//showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(n);
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-  let i;
-  const slides = document.getElementsByClassName("projectSlides");
-  // let slides = {[".projectSlides1", "projectSlides2"]}
-  
-  let dots = document.getElementsByClassName("projectSlider__dots--dot");
-  if (n > slides.length) {
-    slideIndex = 1
+function currentPrjIndex() {
+  const prj = document.getElementsByClassName('open1');
+  return Number(prj[0].id[prj[0].id.length - 1]) - 1;
+}
+
+function initSlides() {
+  let i = 1;
+  while(1) {
+    const prj = document.getElementById('simpleModal_'+i);
+    if(!prj) {
+      break;
+    }
+
+    prjSlides = prj.getElementsByClassName('projectSlides');
+    allSlides.push(prjSlides);
+
+    i++;
   }
-  if (n < 1) {
-    slideIndex = slides.length
+}
+initSlides();
+
+function showSlides(index) {
+  let i;
+  //const slides = document.getElementsByClassName("projectSlides");
+  // let slides = {[".projectSlides1", "projectSlides2"]}
+  const prjIndex = currentPrjIndex();
+  const slides = allSlides[prjIndex];
+  slideIndex += index;
+
+  let dots = document.getElementsByClassName("projectSlider__dots--dot");
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -165,8 +192,8 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
 }
 
 
