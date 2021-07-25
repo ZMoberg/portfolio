@@ -1201,7 +1201,7 @@ textarea.input {
 }
 
 .contact-info {
-    padding: 1.5rem 2.2rem;
+    padding: 4.5rem 2.2rem;
     position: relative;
 }
 
@@ -1288,13 +1288,21 @@ textarea.input {
 
 /* mobile styles */
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
     .landing-page {}
 
     .head_sub {}
 
     .title {
         font-size: 6rem;
+    }
+
+    .project-section {
+        height: 270vh
+    }
+
+    .contact-info {
+        padding: 4.5rem 2.2rem;
     }
 }
 
