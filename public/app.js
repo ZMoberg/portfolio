@@ -79,9 +79,9 @@ function openNav() {
   });
 
   tlAbout.to(".about_intro", {opacity: 1, x: 20, y: 20, duration: 1.5})
-  tlAbout.to(".who_header", {opacity: 1, x: -30, duration: .5}, 1)
-  tlAbout.to(".about-text", {opacity: 1, x: -30, duration: .5}, 1.25)
-  tlAbout.to(".skills", {opacity: 1, x: -30, duration: .5}, 1.5)
+  tlAbout.to(".who_header", {opacity: 1, duration: .5}, 1)
+  tlAbout.to(".about-text", {opacity: 1, duration: .5}, 1.25)
+  tlAbout.to(".skills", {opacity: 1, duration: .5}, 1.5)
 
 
   // Project Section Test

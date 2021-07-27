@@ -614,7 +614,7 @@ a.left:hover:before {
     position: absolute;
     font-size: 2.65rem;
     top: 20%;
-    left: 28%;
+    left: 20%;
     opacity: 0;
 }
 
@@ -623,7 +623,7 @@ a.left:hover:before {
     position: absolute;
     /* margin: 0 auto; */
     padding: 0;
-    left: 20%;
+    left: 10%;
     top: 27%;
     flex-wrap: wrap;
     width: 85%;
@@ -637,10 +637,11 @@ a.left:hover:before {
     margin: 0 auto;
     position: relative;
     bottom: -56%;
-    right: -9%;
+    right: 3%;
     opacity: 0;
     z-index: 1;
-    width: 100%;
+    width: 96%;
+    overflow-x: hidden;
 }
 
 table caption {
@@ -651,17 +652,24 @@ table caption {
 
 th {
     font-size: 1rem;
+    overflow: hidden;
 }
 
 tbody {
     position: absolute;
     top: 107%;
+    overflow: hidden;
 }
 
 table td {
     font-size: .85rem;
     text-align: center;
     padding: 2px 2px;
+    overflow: hidden;
+}
+
+tr {
+    overflow-x: hidden;
 }
 
 /* Projects Header */
@@ -1201,7 +1209,7 @@ textarea.input {
 }
 
 .contact-info {
-    padding: 0.9rem;
+    padding: 1.4rem;
     position: relative;
 }
 
@@ -1246,8 +1254,9 @@ textarea.input {
 }
 
 .social-media p {
+    position: absolute;
+    left: 4.5%;
     font-size: 1rem;
-    margin-top: -5px;
     color: #333;
 }
 
@@ -1255,7 +1264,7 @@ textarea.input {
     display: flex;
     position: absolute;
     left: 32%;
-    bottom: 7%;
+    bottom: 9%;
 }
 
 .social-icons a {
