@@ -143,7 +143,7 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .nav-links a:hover {
@@ -176,7 +176,7 @@ nav {
 .nav-links.open {
     background: #13C4A3;
     clip-path: circle(120px at -10% 70%);
-    -webkit-clip-path: circle(20rem at -10% 90%);
+    -webkit-clip-path: circle(23rem at -10% 90%);
     pointer-events: all;
     z-index: 9999;
 }
@@ -704,9 +704,9 @@ tr {
 }
 
 .modals {
-    /* position: absolute; */
-    /* top: 8%; */
-    /* left: 7%; */
+    position: absolute;
+    top: 8%;
+    left: 7%;
 }
 
 .card {
@@ -1638,6 +1638,7 @@ textarea.input {
 
     .top_contacts {
         display: block;
+        right: 1%;
     }
 
     .header_nav ul li a {
@@ -1745,8 +1746,8 @@ textarea.input {
         }
 
     .mouse_scroll {
-        right: 7%;
-        bottom: 12%;  
+        right: 6%;
+        bottom: 12%;
     }
 
     .m_scroll_arrows {
