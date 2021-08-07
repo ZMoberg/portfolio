@@ -1610,7 +1610,7 @@ textarea.input {
     }
 
     .project-section {
-        height: 345vh
+        height: 120vh;
     }
 
     .work-together {
@@ -1743,7 +1743,7 @@ textarea.input {
     }
 
     .mouse_scroll {
-        right: 6%;
+        right: 10%;
         bottom: 12%;
     }
 
@@ -1814,6 +1814,7 @@ textarea.input {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: auto 0;
+        top: 11%;
     }
 
     .card {
