@@ -1823,7 +1823,8 @@ textarea.input {
         font-size: 2rem;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         top: 43%;
         padding: 1.25rem;
         font-size: 3.5rem;
@@ -1870,7 +1871,7 @@ textarea.input {
     }
 
     .information {
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .info {
@@ -1919,7 +1920,8 @@ textarea.input {
         /* padding: 1rem; */
     }
 
-    .input-container span:before, .input-container span:after {
+    .input-container span:before,
+    .input-container span:after {
         width: 1rem;
         height: .5rem;
         font-size: 1rem;
@@ -1933,15 +1935,15 @@ textarea.input {
         min-height: 10rem;
     }
 
-    
+
 }
 
 @media (min-device-width: 1024px) {
-    
+
     .title {
         font-size: 7rem
     }
-    
+
     .title_sub {
         font-size: 5rem;
     }
@@ -1958,8 +1960,7 @@ textarea.input {
         font-size: 3rem;
     }
 
-    .line {
-    }
+    .line {}
 
     .nav-links {
         padding-top: 40rem;
@@ -2004,7 +2005,7 @@ textarea.input {
         padding: .75rem 2.5rem;
     }
 
-    .card{
+    .card {
         padding: 10.5rem;
     }
 
@@ -2014,9 +2015,9 @@ textarea.input {
     }
 
     .modals {
-    column-gap: 1rem;
-    row-gap: 4rem;
-    align-items: center;
+        column-gap: 1rem;
+        row-gap: 4rem;
+        align-items: center;
     }
 
     .work-together {
@@ -2027,6 +2028,7 @@ textarea.input {
         font-size: 5rem;
         margin: 4rem auto;
     }
+
     .text {
         line-height: 3.5rem;
         margin-bottom: 12rem;
@@ -2035,8 +2037,8 @@ textarea.input {
     .information {
         font-size: 2rem;
     }
-    
-    .icon{
+
+    .icon {
         width: 2.5rem;
     }
 
@@ -2069,21 +2071,22 @@ textarea.input {
         padding: 1.5rem;
     }
 
-    .input-container span:before, .input-container span:after {
+    .input-container span:before,
+    .input-container span:after {
         font-size: 1.5rem;
         height: 1.25rem;
         width: 2rem;
     }
 
     .input-container span {
-/*      font-size: 2rem;  */
+        /*      font-size: 2rem;  */
         padding: 2rem;
     }
 
     textarea.input {
         min-height: 20rem;
     }
-    
+
     .btn {
         font-size: 2.5rem;
         padding: .6rem 1.5rem;
@@ -2114,34 +2117,35 @@ textarea.input {
         margin: 0 1.5rem;
     }
 
-     .modal-window1 h3 {
-         font-size: 4.25rem;
-         bottom: 43%;
-     }
+    .modal-window1 h3 {
+        font-size: 4.25rem;
+        bottom: 43%;
+    }
 
-     .modal-window1 p {
-         font-size: 1.75rem;
-         width: 75%;
-         line-height: 2.5rem;
-     }
+    .modal-window1 p {
+        font-size: 1.75rem;
+        width: 75%;
+        line-height: 2.5rem;
+    }
 
-     .modal-buttons {
-         font-size: 2rem;
-     }
+    .modal-buttons {
+        font-size: 2rem;
+    }
 
-     .close-modal {
-         font-size: 3rem;
-     }
+    .close-modal {
+        font-size: 3rem;
+    }
 
-     .prev, .next {
-         top: 50%;
-         font-size: 4rem;
-     }
+    .prev,
+    .next {
+        top: 50%;
+        font-size: 4rem;
+    }
 
 }
 
 
-@media  (min-device-width: 1200px) {
+@media (min-device-width: 1200px) {
 
     .head_sub {
         max-height: 27.5rem;
@@ -2190,13 +2194,13 @@ textarea.input {
     }
 
     .mouse_scroll {
-    right: 3%;
+        right: 3%;
     }
 
     .mouse {
-    height: 35px;
-    width: 20px;
-    border-radius: 9px;
+        height: 35px;
+        width: 20px;
+        border-radius: 9px;
     }
 
     .m_scroll_arrows {
@@ -2231,7 +2235,7 @@ textarea.input {
         font-size: 4rem;
         margin-bottom: 1rem;
     }
-    
+
     .skills {
         width: 50%;
         right: 22%;
@@ -2276,7 +2280,7 @@ textarea.input {
     }
 
     .container {
-    height: 70vh;
+        height: 70vh;
     }
 
     .form {
@@ -2296,11 +2300,11 @@ textarea.input {
     }
 
     .contact-title {
-    font-size: 4rem;
-    position: absolute;
-    top: 5%;
-    right: 3%;
-    margin: 2rem auto;
+        font-size: 4rem;
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        margin: 2rem auto;
     }
 
     .text {
@@ -2343,8 +2347,8 @@ textarea.input {
     }
 
     .input {
-    font-size: 1.5rem;
-    padding: .5rem;
+        font-size: 1.5rem;
+        padding: .5rem;
     }
 
     .input-container label {
@@ -2365,4 +2369,3 @@ textarea.input {
     }
 
 }
-
