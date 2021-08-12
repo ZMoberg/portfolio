@@ -604,7 +604,6 @@ a.left:hover:before {
     position: absolute;
     margin: 0 auto;
     padding: 0;
-    left: %;
     top: 6%;
     opacity: 0;
 }
@@ -699,10 +698,6 @@ tr {
     display: flex;
     flex-direction: column;
     z-index: 1;
-}
-
-.wrapper {
-    /* margin: 1.6rem; */
 }
 
 .modals {
@@ -1015,7 +1010,7 @@ tr {
 
 .form {
     width: 100%;
-    height: 105vh;
+    /* height: 105vh; */
     /* max-width: 320px; */
     background-color: rgb(203, 243, 241);
     z-index: 1000;
@@ -1941,7 +1936,7 @@ textarea.input {
     
 }
 
-@media (min-device-width: 1024px) and (max-device-width: 1600px) {
+@media (min-device-width: 1024px) {
     
     .title {
         font-size: 7rem
@@ -1953,6 +1948,10 @@ textarea.input {
 
     .header_nav ul li a {
         font-size: 2.5rem;
+    }
+
+    .head_sub {
+        max-height: 37rem;
     }
 
     .top_contacts-link {
@@ -2053,6 +2052,7 @@ textarea.input {
 
     .connect-title {
         font-size: 4rem;
+        margin-bottom: 1.5rem;
     }
 
     .input {
@@ -2087,11 +2087,11 @@ textarea.input {
     .btn {
         font-size: 2.5rem;
         padding: .6rem 1.5rem;
-        margin-left: 43%;
+        margin-left: 40%;
     }
 
     form {
-        padding: 2rem;
+        padding: 4rem;
     }
 
     .modal-window1 {
@@ -2141,6 +2141,228 @@ textarea.input {
 }
 
 
-@media  (min-device-width: 1600px) {
+@media  (min-device-width: 1200px) {
+
+    .head_sub {
+        max-height: 27.5rem;
+    }
+
+    .title {
+        font-size: 7rem;
+    }
+
+    .title_sub {
+        font-size: 2rem;
+    }
+
+    .header_nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    .header_nav ul {
+        margin-top: 1.5rem;
+    }
+
+    .nav-links {
+        padding-top: 15rem
+    }
+
+    .nav-links.open {
+        -webkit-clip-path: circle(45rem at -5% 95%);
+    }
+
+    .nav-links li {
+        margin: 5rem;
+    }
+
+    .nav-links a {
+        font-size: 3rem;
+    }
+
+    .top_contacts {
+        display: block;
+        right: 2%;
+    }
+
+    .top_contacts-link {
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+    .mouse_scroll {
+    right: 3%;
+    }
+
+    .mouse {
+    height: 35px;
+    width: 20px;
+    border-radius: 9px;
+    }
+
+    .m_scroll_arrows {
+        width: 15px;
+        height: 15px;
+    }
+
+    .about_section {
+        height: 135vh;
+    }
+
+    .about_intro {
+        font-size: 5.5rem;
+        left: 10%;
+    }
+
+    .who_header {
+        font-size: 4rem;
+        top: 21%;
+        left: 17.5%;
+    }
+
+    .about_body p {
+        top: 29%;
+        left: 7%;
+        width: 43%;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+
+    table caption {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
     
+    .skills {
+        width: 50%;
+        right: 22%;
+        bottom: -44%;
+    }
+
+    th {
+        font-size: 1.5rem;
+        padding: 0 1.25rem;
+    }
+
+    table td {
+        font-size: 1.25rem;
+        padding: .75rem 1.85rem;
+    }
+
+    .myStuff-header {
+        font-size: 6rem
+    }
+
+    .project-section {
+        height: 125vh;
+    }
+
+    .modals {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.75rem;
+        grid-row-gap: 2.5rem;
+        left: 1.5%;
+        top: 21%;
+    }
+
+    .card {
+        padding: 8.5rem;
+    }
+
+    .work-together {
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
+    .container {
+    height: 70vh;
+    }
+
+    .form {
+        grid-template-columns: repeat(2, 1fr);
+        /* height: 100%; */
+    }
+
+    .bottom {
+        height: 70vh;
+    }
+
+    .contact-form:before {
+        top: 48%;
+        left: -20%;
+        height: 325px;
+        width: 325px;
+    }
+
+    .contact-title {
+    font-size: 4rem;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    margin: 2rem auto;
+    }
+
+    .text {
+        position: absolute;
+        top: 28%;
+        left: 13%;
+        margin-bottom: 0;
+        line-height: 3rem;
+        width: 70%;
+    }
+
+    .information {
+        font-size: 1.25rem
+    }
+
+    .info {
+        position: absolute;
+        bottom: 24%;
+        left: 5%;
+    }
+
+    .icon {
+        width: 1.75rem;
+    }
+
+    .social-media p {
+        font-size: 1.25rem;
+        bottom: 15%;
+    }
+
+    .social-icons a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .social-icons {
+        bottom: 15%;
+        left: 20%;
+    }
+
+    .input {
+    font-size: 1.5rem;
+    padding: .5rem;
+    }
+
+    .input-container label {
+        font-size: 1.25rem;
+        left: 0;
+    }
+
+    textarea.input {
+        min-height: 12rem;
+    }
+
+    .input-container.textarea label {
+        top: -5%;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
 }
+
