@@ -7,9 +7,16 @@
 }
 
 main {
-    font-family: 'Inter', sans-serif;
+    font-family: address-sans-pro, sans-serif;
     color: rgb(203, 243, 241);
     background-color: #32322C;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Bungee, sans-serif;
 }
 
 ul {
@@ -85,7 +92,7 @@ img {
 
 .title {
     font-size: 3rem;
-    margin-bottom: .75rem;
+    /* margin-bottom: 1.2rem; */
     animation: moveInright .6s ease-in;
 }
 
@@ -267,6 +274,7 @@ li.fade {
     flex-basis: 100%;
     width: 100%;
     justify-content: center;
+    letter-spacing: .25rem;
 }
 
 .header_nav ul {
@@ -279,7 +287,6 @@ li.fade {
 .header_nav ul li a {
     display: block;
     color: rgb(203, 243, 241);
-    opacity: .65;
     font-size: 1rem;
     padding: 0 .8rem;
     text-decoration: none;
@@ -587,14 +594,13 @@ a.left:hover:before {
 /* About section */
 
 .about_section {
-    height: 128vh;
+    height: 65vh;
     width: 100%;
     position: relative;
     background: url("../img/waveface3.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #32322C;
-    font-family: 'Hind Madurai', sans-serif;
     z-index: 1;
     overflow: hidden;
 }
@@ -617,7 +623,7 @@ a.left:hover:before {
 }
 
 .about_body p {
-    font-size: 1.15rem;
+    font-size: 1.13rem;
     position: absolute;
     /* margin: 0 auto; */
     padding: 0;
@@ -626,48 +632,36 @@ a.left:hover:before {
     flex-wrap: wrap;
     width: 88%;
     opacity: 0;
-    line-height: 1.3;
+    line-height: 1.2;
+    letter-spacing: 2px;
 }
 
 /* Skills  */
 
 .skills {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
     bottom: -56%;
-    right: 2%;
     opacity: 0;
     z-index: 1;
     width: 96%;
-    overflow-x: hidden;
+    line-height: 0.7;
+    letter-spacing: 2px;
 }
 
-table caption {
-    font-size: 2.65rem;
-    font-weight: bold;
-    margin-bottom: .4rem;
-}
-
-th {
-    font-size: 1rem;
-    overflow: hidden;
-}
-
-tbody {
+.skills_intro {
     position: absolute;
-    top: 107%;
-    overflow: hidden;
+    top: -65%;
+    font-size: 1.95rem;
+    letter-spacing: 4px;
 }
 
-table td {
-    font-size: .85rem;
-    text-align: center;
-    padding: 2px 2px;
-    overflow: hidden;
+.skills p {
+    font-size: 1.1rem;
 }
 
-tr {
-    overflow-x: hidden;
+.skills strong {
+    font-weight: 500;
 }
 
 /* Projects Header */
@@ -1308,9 +1302,7 @@ textarea.input {
         max-height: 335px;
     }
 
-    .skills {
-        right: -1%;
-    }
+    .skills {}
 
     tr {}
 
@@ -1993,17 +1985,13 @@ textarea.input {
         left: 30%;
     }
 
-    .skills {
-        right: 1%;
-    }
+    .skills {}
 
     table caption {
         font-size: 5rem;
     }
 
-    table td {
-        padding: .75rem 2.5rem;
-    }
+    table td {}
 
     .card {
         padding: 10.5rem;
@@ -2149,22 +2137,34 @@ textarea.input {
 
     .head_sub {
         max-height: 27.5rem;
+        padding-top: 8.25rem;
     }
 
     .title {
-        font-size: 6rem;
+        font-size: 7.75rem;
     }
 
     .title_sub {
-        font-size: 2rem;
+        position: absolute;
+        font-size: 3.35rem;
+        bottom: -7%;
+        left: 13%;
+    }
+
+    .header_nav {
+        position: absolute;
+        left: -1.5%;
+        bottom: -40%;
     }
 
     .header_nav ul li a {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: 0 2.5rem;
+        font-weight: 100;
     }
 
     .header_nav ul {
-        margin-top: 1.5rem;
+        /* margin-top: 1.5rem; */
     }
 
     .nav-links {
@@ -2213,43 +2213,44 @@ textarea.input {
     }
 
     .about_intro {
-        font-size: 5.5rem;
+        font-size: 3.5rem;
         left: 10%;
     }
 
     .who_header {
-        font-size: 4rem;
-        top: 21%;
-        left: 17.5%;
+        font-size: 1.95rem;
+        top: 27%;
+        left: 12%;
+        letter-spacing: 4px;
     }
 
     .about_body p {
-        top: 29%;
-        left: 7%;
-        width: 43%;
-        text-align: center;
-        line-height: 1.8rem;
+        top: 32.5%;
+        left: 12%;
+        width: 42%;
     }
 
     table caption {
-        font-size: 4rem;
-        margin-bottom: 1rem;
+        position: absolute;
+        font-size: 1.95rem;
+        letter-spacing: 4px;
+        top: -190%;
+        left: 0%;
     }
 
     .skills {
         width: 50%;
-        right: 22%;
-        bottom: -44%;
+        left: 12%;
+        bottom: -56%;
     }
 
     th {
-        font-size: 1.5rem;
-        padding: 0 1.25rem;
+        text-align: start;
+        font-size: 1.13rem;
     }
 
     table td {
-        font-size: 1.25rem;
-        padding: .75rem 1.85rem;
+        font-size: 1.17rem;
     }
 
     .myStuff-header {
@@ -2257,7 +2258,7 @@ textarea.input {
     }
 
     .project-section {
-        height: 125vh;
+        height: 140vh;
     }
 
     .modals {
