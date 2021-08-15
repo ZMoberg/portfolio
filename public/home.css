@@ -660,8 +660,9 @@ a.left:hover:before {
     font-size: 1.1rem;
 }
 
-.skills strong {
-    font-weight: 500;
+.skills span {
+    font-weight: bold;
+    letter-spacing: -.5px;
 }
 
 /* Projects Header */
