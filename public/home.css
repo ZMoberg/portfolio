@@ -594,7 +594,7 @@ a.left:hover:before {
 /* About section */
 
 .about_section {
-    height: 65vh;
+    height: 55vh;
     width: 100%;
     position: relative;
     background: url("../img/waveface3.png");
