@@ -692,7 +692,7 @@ a.left:hover:before {
     background-image: url("../img/wavenoface2.png");
     background-repeat: no-repeat;
     background-size: cover;
-/*     font-family: 'Hind Madurai', sans-serif; */
+    /*     font-family: 'Hind Madurai', sans-serif; */
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -2299,7 +2299,7 @@ textarea.input {
         padding: 8.5rem;
     }
 
-/*     open card       */
+    /*     open card       */
 
     .close-modal {
         top: 3%;
@@ -2315,8 +2315,7 @@ textarea.input {
         left: 35%;
     }
 
-    .project-slider__container {
-    }
+    .project-slider__container {}
 
     .project-slider__container .projectSlides img {
         height: 20rem;
@@ -2333,7 +2332,8 @@ textarea.input {
         margin: 0 1rem;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         font-size: 2.5rem;
         top: 40%;
     }
@@ -2351,9 +2351,7 @@ textarea.input {
         letter-spacing: 2px;
     }
 
-    .modal-window1 p {
-        
-    }
+    .modal-window1 p {}
 
     .buttons {
         bottom: 3%;
@@ -2412,6 +2410,7 @@ textarea.input {
     .information {
         font-size: 1.25rem;
     }
+
 
     .information p {
         margin-left: 1rem;
