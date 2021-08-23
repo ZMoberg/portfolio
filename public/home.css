@@ -1398,11 +1398,11 @@ textarea.input {
     .project-section {
         height: 275vh;
     }
-    
-    .modals {
-	row-gap: 1.5rem;
 
-}
+    .modals {
+        row-gap: 1.5rem;
+
+    }
 
     .card {
         padding: 3rem 3.75rem;
@@ -1439,8 +1439,7 @@ textarea.input {
         width: 100%;
     }
 
-    .contact-info {
-    }
+    .contact-info {}
 
     .contact-info:before {
         bottom: -68%;
@@ -1464,24 +1463,23 @@ textarea.input {
     .information {
         font-size: 1rem
     }
-    
+
     .info {
-	    top: 51%;
+        top: 51%;
     }
-    
-    .input-container {
-        
-    }
+
+    .input-container {}
 
     form {
         padding-top: 4.25rem;
     }
-    
+
     .btn {
-	   margin-top: 1.25rem;
+        margin-top: 1.25rem;
     }
-    
-    .prev, .next {
+
+    .prev,
+    .next {
         top: 28%;
     }
 }
@@ -1508,7 +1506,7 @@ textarea.input {
 
     .title {
         font-size: 2.75rem;
-        
+
     }
 
     .title_sub {
@@ -1594,7 +1592,7 @@ textarea.input {
         bottom: 5%;
         left: 36%;
     }
-    
+
     .modals {
         row-gap: 1.5rem;
     }
@@ -1647,17 +1645,16 @@ textarea.input {
         padding: .4rem 2rem;
         margin-left: 41%;
     }
-    
+
     .input {
         padding: .3rem
     }
-    
-    .input-container label{ 
+
+    .input-container label {
         padding: .75rem;
     }
-    .textarea {
-   
-    }
+
+    .textarea {}
 }
 
 @media all and (min-width: 425px) {
@@ -1709,11 +1706,11 @@ textarea.input {
         display: block;
         right: 1%;
     }
-    
+
     .top_contacts-link {
         font-size: 2rem;
     }
-    
+
     .header_nav ul {
         margin-top: 11rem
     }
@@ -1884,7 +1881,7 @@ textarea.input {
     }
 
     .skills p {
-    font-size: 1.4rem;
+        font-size: 1.4rem;
     }
 
     .myStuff-header {
@@ -1905,18 +1902,18 @@ textarea.input {
     }
 
     .card {
-    height: 14rem;
-    padding: 5rem;
+        height: 14rem;
+        padding: 5rem;
     }
 
     .wrapper {
-    position: relative;
+        position: relative;
     }
-        
-    .modal-window1{
+
+    .modal-window1 {
         height: 75vh;
         width: 65%
-    }   
+    }
 
     .project-slider__container {
         height: 30rem;
@@ -1972,19 +1969,19 @@ textarea.input {
         padding: .65rem 1rem;
         font-size: 1.25rem;
     }
-    
+
     .bottom {
-	   height: 55vh;
+        height: 55vh;
     }
-    
+
     .container {
         height: 55vh;
     }
-    
+
     .form {
-	   height: 55vh;
+        height: 55vh;
     }
-    
+
     .contact-info::before {
         bottom: 30%;
     }
@@ -1993,10 +1990,8 @@ textarea.input {
         bottom: -15%;
         right: 10%;
     }
-    
-    .circle.two {
-        
-    }
+
+    .circle.two {}
 
     .contact-title {
         font-size: 2.5rem;
@@ -2012,7 +2007,7 @@ textarea.input {
         font-size: 1.25rem;
         padding: .25rem;
     }
-    
+
     .information p {
         margin-left: 2rem;
     }
@@ -2022,7 +2017,7 @@ textarea.input {
         bottom: 2%;
         /* margin: 2rem auto; */
     }
-    
+
     .info a {
         color: #1abc9c;
         font-size: 1.75rem;
@@ -2048,17 +2043,15 @@ textarea.input {
     .icon {
         width: 2rem;
     }
-    
+
     form {
         height: 45vh;
         width: 85%;
         left: 10%;
         padding-top: 6rem;
     }
-    
-    section {
-    
-    }
+
+    section {}
 
     .connect-title {
         font-size: 2.5rem;
@@ -2094,11 +2087,10 @@ textarea.input {
     textarea.input {
         min-height: 10rem;
     }
-    
+
     .btn {
         margin-top: 0;
         font-size: 1.5rem
-         
     }
 
 
@@ -2157,9 +2149,12 @@ textarea.input {
         top: -80%;
     }
 
-    .skills p {font-size: 1.5rem;line-height: 1.2;}
+    .skills p {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
 
-    
+
 
     .about_body p {
         font-size: 1.5rem;
@@ -2175,15 +2170,15 @@ textarea.input {
     }
 
     .skills {
-    left: 5%;
-    bottom: -63%;
+        left: 5%;
+        bottom: -63%;
     }
 
     .myStuff-header {
         font-size: 4rem;
         margin-bottom: 5.25rem;
     }
- 
+
     .project-section {
         height: 94vh;
     }
@@ -2216,8 +2211,8 @@ textarea.input {
 
 
     .modals {
-    top: 11%;
-    left: 2%;
+        top: 11%;
+        left: 2%;
     }
 
     .modal-window1 {
@@ -2258,7 +2253,7 @@ textarea.input {
     .close-modal {
         font-size: 1.75rem;
         top: 9%;
-        right:25%;
+        right: 25%;
     }
 
     .buttons {
@@ -2302,10 +2297,10 @@ textarea.input {
     .information p {
         margin-left: 3rem;
     }
-    
+
     .info a {
-	font-size: 2.25rem;
-}
+        font-size: 2.25rem;
+    }
 
     .icon {
         width: 2.5rem;
@@ -2370,8 +2365,7 @@ textarea.input {
         position: absolute;
     }
 
-    .contact-info {
-    }
+    .contact-info {}
 
     form {
         height: 61vh;
@@ -2382,8 +2376,7 @@ textarea.input {
     }
 
 
-    .bottom {
-    }
+    .bottom {}
 
     .circle.one {
         top: 13%;
@@ -2391,7 +2384,7 @@ textarea.input {
     }
 
     .circle.two {
-    bottom: -25%;
+        bottom: -25%;
     }
 
     .contact-form {
@@ -2433,8 +2426,7 @@ textarea.input {
         z-index: 1;
     }
 
-    .header_nav ul {
-    }
+    .header_nav ul {}
 
     .nav-links {
         padding: 20rem 7rem;
@@ -2481,7 +2473,7 @@ textarea.input {
     .about_section {
         height: 120vh;
     }
-    
+
     .about_intro {
         font-size: 3.5rem;
         left: 10%;
@@ -2493,7 +2485,7 @@ textarea.input {
         left: 12%;
         letter-spacing: .5rem;
     }
-    
+
     .skills_intro {
         top: -32%;
         font-size: 2.25rem;
@@ -2521,10 +2513,12 @@ textarea.input {
     }
 
     .info a {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
-    .myStuff-header {height: 13vh;}
+    .myStuff-header {
+        height: 13vh;
+    }
 
     .project-section {
         height: 120vh;
