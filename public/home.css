@@ -76,14 +76,14 @@ img {
 .head_sub {
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 6rem;
+    padding-top: 8rem;
     text-align: center;
     position: -webkit-sticky;
     /* Required for Safari */
     position: sticky;
     top: 1%;
     bottom: 20%;
-    max-height: 290px;
+    max-height: 253px;
 }
 
 /* .scroller {
@@ -91,9 +91,9 @@ img {
 } */
 
 .title {
-    font-size: 3rem;
-    /* margin-bottom: 1.2rem; */
+    font-size: 2.25rem;
     animation: moveInright .6s ease-in;
+    line-height: 1.25;
 }
 
 @keyframes moveInright {
@@ -113,9 +113,10 @@ img {
 }
 
 .title_sub {
-    font-size: 1.75rem;
-    font-weight: bold;
+    font-size: 1.35rem;
+    /* font-weight: bold; */
     letter-spacing: .1rem;
+    line-height: 1;
     animation: moveInleft .5s ease-out;
     opacity: .4;
 }
@@ -177,7 +178,7 @@ nav {
     width: 100%;
     flex-direction: column;
     clip-path: circle(80px at -10% 80%);
-    -webkit-clip-path: circle(80px at -10% 80%);
+    /*! -webkit-clip-path: circle(80px at -10% 80%); */
     transition: all .3s ease-out;
     pointer-events: none;
     z-index: 35;
@@ -185,7 +186,7 @@ nav {
 
 .nav-links.open {
     background: #13C4A3;
-    clip-path: circle(120px at -10% 70%);
+    clip-path: circle(22rem at -6% 95%);
     -webkit-clip-path: circle(23rem at -10% 90%);
     pointer-events: all;
     z-index: 9999;
@@ -239,7 +240,7 @@ li.fade {
     fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke: rgb(203, 243, 241);
-    stroke-width: 4px;
+    stroke-width: 3px;
     stroke-linecap: round;
 }
 
@@ -276,10 +277,11 @@ li.fade {
     width: 100%;
     justify-content: center;
     letter-spacing: .25rem;
+    z-index: 100;
 }
 
 .header_nav ul {
-    margin-top: 6rem;
+    margin-top: 8rem;
     padding: 0;
     display: flex;
     animation: fadeIn .7s ease-in;
@@ -291,6 +293,8 @@ li.fade {
     font-size: 1rem;
     padding: 0 .8rem;
     text-decoration: none;
+    z-index: 1;
+    font-weight: 200;
 }
 
 .header_nav ul li a:hover {
@@ -340,7 +344,7 @@ a.left:hover:before {
 
 .mouse_scroll {
     position: fixed;
-    right: 6%;
+    right: 9%;
     bottom: 8%;
     display: block;
     margin: 0 auto;
@@ -595,7 +599,7 @@ a.left:hover:before {
 /* About section */
 
 .about_section {
-    height: 55vh;
+    height: 116vh;
     width: 100%;
     position: relative;
     background: url("../img/waveface3.png");
@@ -607,30 +611,33 @@ a.left:hover:before {
 }
 
 .about_intro {
-    font-size: 3.2rem;
+    font-size: 2rem;
+    font-weight: 200;
     position: absolute;
     margin: 0 auto;
     padding: 0;
-    top: 6%;
+    top: 3%;
     opacity: 0;
 }
 
 .who_header {
     position: absolute;
-    font-size: 2.65rem;
-    top: 20%;
-    left: 20%;
+    font-size: 1.5rem;
+    top: 21%;
+    left: 7%;
     opacity: 0;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
 }
 
 .about_body p {
-    font-size: 1.13rem;
+    font-size: .95rem;
     font-weight: 200;
     position: absolute;
     /* margin: 0 auto; */
     padding: 0;
-    left: 10%;
-    top: 27%;
+    left: 8%;
+    top: 28%;
     flex-wrap: wrap;
     width: 88%;
     opacity: 0;
@@ -643,69 +650,78 @@ a.left:hover:before {
 .skills {
     /* margin: 0 auto; */
     position: relative;
-    bottom: -56%;
+    bottom: -59%;
     opacity: 0;
     z-index: 1;
-    width: 96%;
-    line-height: 0.7;
+    width: 90%;
+    line-height: .95;
     letter-spacing: 2px;
+    left: 8%;
 }
 
 .skills_intro {
     position: absolute;
-    top: -65%;
-    font-size: 1.95rem;
-    letter-spacing: 4px;
+    top: -28%;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    font-weight: 200;
+    left: 0%;
 }
 
 .skills p {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 200;
+    letter-spacing: .25rem;
 }
 
 .skills span {
-    font-weight: bold;
-    letter-spacing: -.5px;
+    font-weight: 400;
+    letter-spacing: -.4px;
 }
 
 /* Projects Header */
 
 .myStuff-header {
-    font-size: 4rem;
+    font-size: 1.75rem;
     margin: 0 auto;
     text-align: center;
     position: -webkit-sticky;
     /* Required for Safari */
     position: sticky;
     top: 1%;
-    bottom: 2%;
+    bottom: 15%;
     opacity: 0;
+    height: 7vh;
 }
 
 /*--- Project Section ---*/
 
 .project-section {
     position: relative;
-    height: 323vh;
+    height: 286vh;
     width: 100%;
     margin: 0 auto;
     background-image: url("../img/wavenoface2.png");
     background-repeat: no-repeat;
     background-size: cover;
     /*     font-family: 'Hind Madurai', sans-serif; */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     z-index: 1;
+    row-gap: 2rem;
 }
 
 .modals {
     position: absolute;
-    top: 8%;
-    left: 9%;
+    top: 10%;
+    left: 4%;
+    overflow: hidden;
+    row-gap: 1rem;
+    display: grid;
 }
 
 .card {
-    height: 208px;
+    height: 188px;
     background: #fff;
     position: relative;
     display: flex;
@@ -715,7 +731,7 @@ a.left:hover:before {
     transition: 0.5s ease-in-out;
     text-align: center;
     border-radius: 7px;
-    padding: 3.25rem;
+    padding: 2.25rem;
 }
 
 .card:hover {
@@ -750,7 +766,7 @@ a.left:hover:before {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .card .info {
@@ -856,30 +872,36 @@ a.left:hover:before {
 }
 
 .modal-window1 h3 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     text-align: center;
+    position: absolute;
+    top: 41%;
 }
 
 .modal-window1 p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: .25rem;
     text-align: center;
-    width: 90%;
-    margin-top: 1.5%;
+    width: 80%;
+    /*! margin-top: 1.5%; */
+    top: 51%;
+    position: absolute;
 }
 
 .buttons {
     position: absolute;
     bottom: 11%;
-    /* margin: 7px; */
-    /* padding: 7px; */
+    /*! margin: 7px; */
+    /*! padding: 7px; */
 }
 
 .modal-buttons {
     font-family: address-sans-pro, sans-serif;
-    padding: .65rem .85rem;
+    padding: .4rem .75rem;
     background-color: rgb(203, 243, 241);
     border: 1px solid #13C4A3;
-    font-size: .90rem;
+    font-size: .75rem;
     color: #13C4A3;
     line-height: 1;
     border-radius: 15px;
@@ -908,7 +930,7 @@ a.left:hover:before {
 .project-slider__container .projectSlides img {
     object-fit: cover;
     width: 100%;
-    height: 226px;
+    height: 195px;
     border-radius: 7px;
 }
 
@@ -924,7 +946,7 @@ a.left:hover:before {
     padding: 12px;
     color: white;
     /* font-weight: bold; */
-    font-size: 27px;
+    font-size: 1.5rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
@@ -945,14 +967,14 @@ a.left:hover:before {
 .projectSlider__dots {
     position: absolute;
     bottom: 3%;
-    left: 32%;
+    left: 35%;
     text-align: center;
 }
 
 .projectSlider__dots--dot {
     cursor: pointer;
-    height: 9px;
-    width: 9px;
+    height: 7px;
+    width: 7px;
     margin: 0 10px;
     background-color: #bbb;
     border-radius: 50%;
@@ -968,12 +990,13 @@ a.left:hover:before {
 /*--- Work Together ---*/
 
 .work-together {
-    font-size: 2rem;
+    font-size: 1rem;
+    line-height: 1;
     margin: 0 auto;
     text-align: center;
     position: sticky;
     position: -webkit-sticky;
-    top: -10%;
+    top: -30%;
     bottom: 10%;
     opacity: 0;
     margin-bottom: 20px;
@@ -982,17 +1005,18 @@ a.left:hover:before {
 /*--- Bottom ---*/
 
 .bottom {
-    height: 105vh;
+    height: 55vh;
     /* background-color: rgb(76, 96, 133); */
+    position: relative;
 }
 
 /* Footer / Contacts */
 
 .close-modal {
     position: absolute;
-    top: 1.5%;
-    right: 2%;
-    font-size: 1.5rem;
+    top: 8%;
+    right: 9%;
+    font-size: 1rem;
     color: rgb(231, 245, 244);
     z-index: 1;
 }
@@ -1000,17 +1024,16 @@ a.left:hover:before {
 .container {
     position: relative;
     width: 100%;
-    height: 105vh;
+    height: 55vh;
     background-color: #fafafa;
     /* overflow: hidden; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .form {
     width: 100%;
-    height: 83vh;
+    height: 55vh;
     /* max-width: 320px; */
     background-color: rgb(203, 243, 241);
     z-index: 1000;
@@ -1031,10 +1054,10 @@ a.left:hover:before {
 }
 
 .circle.one {
-    width: 230px;
-    height: 230px;
-    top: 213px;
-    right: -40px;
+    width: 85px;
+    height: 85px;
+    bottom: 12%;
+    right: 1px;
 }
 
 .circle.two {
@@ -1059,42 +1082,46 @@ a.left:hover:before {
 form {
     /* padding: 0.6rem; */
     z-index: 10;
-    overflow: hidden;
+    /*! overflow: hidden; */
     position: relative;
-    width: 100%;
-    height: 65vh;
+    width: 90%;
+    height: 45vh;
+    padding-top: 3.25rem;
 }
 
 .contact-title {
     color: #333;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 200;
-    letter-spacing: 3.5px;
+    letter-spacing: .3rem;
 }
 
 .connect-title {
     /* position: absolute; */
     color: rgb(203, 243, 241);
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* line-height: 0.8; */
-    /* text-align: center; */
+    /*! text-align: center; */
     position: absolute;
     width: 100%;
+    letter-spacing: .3rem;
+    top: 4%;
+    left: 8%;
 }
 
 .input-container {
     position: relative;
-    margin: 0.5rem 0;
+    padding: .3rem;
+    margin-left: 1.4rem;
 }
 
 .input {
-    font-size: 1.25rem;
+    font-size: .95rem;
     width: 100%;
     outline: none;
     border: 2px solid rgb(203, 243, 241);
     background: none;
-    padding: .15rem 1.2rem;
     color: rgb(203, 243, 241);
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -1113,19 +1140,19 @@ textarea.input {
 .input-container label {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 6%;
     transform: translateY(-50%);
     padding: 0 0.25rem;
     color: rgb(203, 243, 241);
     /* font-size: 1rem; */
-    font-weight: 400;
+    font-weight: 200;
     pointer-events: none;
     z-index: 1000;
     transition: 0.5s;
 }
 
 .input-container.textarea label {
-    top: 1rem;
+    top: 0;
     transform: translateY(0);
 }
 
@@ -1133,14 +1160,14 @@ textarea.input {
     padding: .2rem 1rem;
     background-color: rgb(203, 243, 241);
     border: 2px solid rgb(203, 243, 241);
-    font-size: 1.5rem;
+    font-size: .85rem;
     color: #13C4A3;
     line-height: 1;
     border-radius: 15px;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 35%;
+    margin-left: 40%;
     font-family: address-sans-pro, sans-serif;
 }
 
@@ -1154,7 +1181,7 @@ textarea.input {
     top: 0;
     left: 25px;
     transform: translateY(-50%);
-    font-size: .75rem;
+    font-size: .35rem;
     padding: 0 0.4rem;
     color: transparent;
     pointer-events: none;
@@ -1207,28 +1234,42 @@ textarea.input {
 }
 
 .text {
-    font-size: 1.25rem;
+    font-size: .85rem;
     color: #333;
-    width: 95%;
+    width: 90%;
     font-weight: 200;
     letter-spacing: 2.5px;
+    line-height: 1.15;
+    top: 21%;
+    position: absolute;
 }
 
 .info {
     font-weight: 200;
     letter-spacing: 2px;
+    bottom: -4%;
+    position: absolute;
+}
+
+.info a {
+    color: #1abc9c;
+    font-size: 1.15rem;
+}
+
+.information p {
+    margin-left: 1.5rem
 }
 
 .information {
     display: flex;
     color: #555;
-    margin: 1.5rem 0;
+    margin: .65rem 0;
     /* align-items: center; */
-    font-size: .95rem;
+    font-size: .85rem;
 }
 
 .icon {
-    width: 20px;
+    width: 1.15rem;
     /* margin-right: 1rem; */
 }
 
@@ -1319,7 +1360,7 @@ textarea.input {
     }
 
     .head_sub {
-        max-height: 335px;
+        max-height: 276px;
     }
 
     .skills {}
@@ -1332,33 +1373,40 @@ textarea.input {
     }
 
     .about_intro {
-        left: 7%;
+        /* left: 7%; */
     }
 
     .about_body p {
         top: 28%;
-        left: 10%;
+        left: 7%;
     }
 
     .who_header {
-        left: 25%;
+        font-weight: 200;
+        letter-spacing: .5rem;
     }
 
     .title {
-        font-size: 4rem;
+        font-size: 2.5rem;
+        line-height: 2;
     }
 
     .title_sub {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .project-section {
         height: 275vh;
     }
+    
+    .modals {
+	row-gap: 1.5rem;
+
+}
 
     .card {
-        padding: 3rem 5rem;
-        right: 1.5%;
+        padding: 3rem 3.75rem;
+        height: 200px;
     }
 
     .project-slider__container {
@@ -1366,11 +1414,11 @@ textarea.input {
     }
 
     .project-slider__container .projectSlides img {
-        height: 274px;
+        height: 228px;
     }
 
     .projectSlider__dots {
-        bottom: 16%;
+        bottom: 28%;
         left: 36%;
     }
 
@@ -1387,12 +1435,11 @@ textarea.input {
     }
 
     .contact-title {
-        font-size: 2.8rem;
+        font-size: 1.75rem;
         width: 100%;
     }
 
     .contact-info {
-        padding: 2rem 1rem;
     }
 
     .contact-info:before {
@@ -1417,9 +1464,25 @@ textarea.input {
     .information {
         font-size: 1rem
     }
+    
+    .info {
+	    top: 51%;
+    }
+    
+    .input-container {
+        
+    }
 
     form {
-        /* padding: 1.5rem; */
+        padding-top: 4.25rem;
+    }
+    
+    .btn {
+	   margin-top: 1.25rem;
+    }
+    
+    .prev, .next {
+        top: 28%;
     }
 }
 
@@ -1444,19 +1507,20 @@ textarea.input {
     }
 
     .title {
-        font-size: 4.5rem;
+        font-size: 2.75rem;
+        
     }
 
     .title_sub {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
     }
 
     .head_sub {
-        max-height: 365px;
+        max-height: 281px;
     }
 
     .header_nav ul {
-        margin-top: 7rem;
+        margin-top: 10rem;
     }
 
     .header_nav ul li a {
@@ -1465,8 +1529,8 @@ textarea.input {
     }
 
     .mouse {
-        height: 35px;
-        width: 18px;
+        height: 25px;
+        width: 13px;
     }
 
     .m_scroll_arrows {
@@ -1492,7 +1556,7 @@ textarea.input {
 
 
     .project-section {
-        height: 228vh;
+        height: 220vh;
     }
 
     .modal-window1 {
@@ -1530,6 +1594,10 @@ textarea.input {
         bottom: 5%;
         left: 36%;
     }
+    
+    .modals {
+        row-gap: 1.5rem;
+    }
 
     .modal-window1 h3 {
         position: absolute;
@@ -1559,7 +1627,6 @@ textarea.input {
     }
 
     .text {
-        margin-top: 2.5rem;
         line-height: 1.5rem
     }
 
@@ -1568,7 +1635,7 @@ textarea.input {
     }
 
     textarea.input {
-        padding: .5rem 1.2rem;
+        padding: .7rem 1.2rem;
         min-height: 10rem;
         border-radius: 22px;
         resize: none;
@@ -1576,9 +1643,20 @@ textarea.input {
     }
 
     .btn {
-        margin-top: 5%;
+        margin-top: 1%;
         padding: .4rem 2rem;
-        margin-left: 32%;
+        margin-left: 41%;
+    }
+    
+    .input {
+        padding: .3rem
+    }
+    
+    .input-container label{ 
+        padding: .75rem;
+    }
+    .textarea {
+   
     }
 }
 
@@ -1598,39 +1676,46 @@ textarea.input {
 }
 
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1020px) {
     .about_section {
-        height: 142vh;
+        height: 105vh;
     }
 
     .project-section {
-        height: 120vh;
+        height: 105vh;
     }
 
     .work-together {
         top: 1%;
-        bottom: 10%;
-        /* margin-bottom: 50px; */
-        width: 60%;
-        font-size: 3rem;
+        bottom: 1%;
+        width: 100%;
+        font-size: 2.5rem;
     }
 }
 
 
 @media all and (min-width: 414px) {}
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-device-width: 768px) {
     .title {
-        font-size: 5rem;
+        font-size: 5.5rem;
     }
 
     .title_sub {
-        font-size: 3.5rem;
+        font-size: 3.4rem;
     }
 
     .top_contacts {
         display: block;
         right: 1%;
+    }
+    
+    .top_contacts-link {
+        font-size: 2rem;
+    }
+    
+    .header_nav ul {
+        margin-top: 11rem
     }
 
     .header_nav ul li a {
@@ -1639,13 +1724,13 @@ textarea.input {
     }
 
     .head_sub {
-        max-height: 485px;
+        max-height: 535px;
     }
 
     .mouse {
-        height: 55px;
-        width: 30px;
-        border-radius: 11px;
+        height: 40px;
+        width: 23px;
+        border-radius: 7px;
     }
 
     .wheel {
@@ -1738,18 +1823,18 @@ textarea.input {
     }
 
     .mouse_scroll {
-        right: 10%;
+        right: 7%;
         bottom: 12%;
     }
 
     .m_scroll_arrows {
-        margin: 0 0 6px 6px;
-        width: 20px;
-        height: 20px;
+        margin: 0 0 5px 5px;
+        width: 15px;
+        height: 15px;
     }
 
     .nav-links.open {
-        clip-path: circle(27rem at -10% 90%);
+        clip-path: circle(40rem at -10% 90%);
         -webkit-clip-path: circle(48rem at -5% 95%);
     }
 
@@ -1767,19 +1852,19 @@ textarea.input {
     }
 
     .about_intro {
-        font-size: 5.5rem;
-        left: 17%;
+        font-size: 5rem;
+        left: 2%;
     }
 
     .who_header {
-        font-size: 4.5rem;
-        left: 28%;
-        top: 18%;
+        font-size: 3.25rem;
+        left: 6%;
+        top: 30%;
     }
 
     .about_body p {
-        font-size: 2.25rem;
-        top: 25%;
+        font-size: 1.5rem;
+        top: 39%;
         left: 6%;
     }
 
@@ -1789,34 +1874,49 @@ textarea.input {
     }
 
     .skills {
-        bottom: -51%;
+        left: 6%;
+        bottom: -66%;
     }
 
-    th {
-        font-size: 2rem;
+    .skills_intro {
+        top: -49%;
+        font-size: 3.25rem;
     }
 
-    table td {
-        font-size: 1.85rem;
-        padding: .5rem .65rem;
+    .skills p {
+    font-size: 1.4rem;
     }
 
     .myStuff-header {
-        font-size: 8rem;
+        font-size: 3.5rem;
+        max-height: 10rem;
+        bottom: 8%;
+        top: -5%;
+        height: 17vh;
     }
 
     .modals {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: auto 0;
-        top: 11%;
+        grid-template-columns: 2fr 2fr;
+        top: 9%;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        padding: 2rem;
     }
 
     .card {
-        right: 11.5%;
-        padding: 7.5rem;
-        margin: auto .5rem;
+    height: 14rem;
+    padding: 5rem;
     }
+
+    .wrapper {
+    position: relative;
+    }
+        
+    .modal-window1{
+        height: 75vh;
+        width: 65%
+    }   
 
     .project-slider__container {
         height: 30rem;
@@ -1824,23 +1924,25 @@ textarea.input {
     }
 
     .project-slider__container .projectSlides img {
-        height: 29rem;
+        height: 21rem;
     }
 
     .close-modal {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        top: 10%;
+        right: 21%;
     }
 
     .prev,
     .next {
-        top: 43%;
+        top: 28%;
         padding: 1.25rem;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .projectSlider__dots {
-        bottom: 10%;
-        left: 40%;
+        bottom: 32%;
+        left: 35%;
     }
 
     .projectSlider__dots--dot {
@@ -1850,42 +1952,80 @@ textarea.input {
     }
 
     .modal-window1 h3 {
-        font-size: 3.25rem;
-        bottom: 40%;
+        font-size: 2.75rem;
+        bottom: 48%;
     }
 
     .modal-window1 p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        bottom: 33%;
+        width: 54%;
+        line-height: 1.5;
     }
 
     .buttons {
-        bottom: 13%;
+        bottom: 19%;
+        padding: ;
     }
 
     .modal-buttons {
-        padding: 1rem 1rem;
+        padding: .65rem 1rem;
         font-size: 1.25rem;
+    }
+    
+    .bottom {
+	   height: 55vh;
+    }
+    
+    .container {
+        height: 55vh;
+    }
+    
+    .form {
+	   height: 55vh;
+    }
+    
+    .contact-info::before {
+        bottom: 30%;
+    }
+
+    .circle.one {
+        bottom: -15%;
+        right: 10%;
+    }
+    
+    .circle.two {
+        
     }
 
     .contact-title {
-        font-size: 4rem;
-        margin: 3rem auto;
+        font-size: 2.5rem;
+        margin: 2rem auto;
     }
 
     .text {
-        font-size: 2rem;
-        font-weight: 200;
+        font-size: 1.25rem;
         width: 95%;
     }
 
     .information {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        padding: .25rem;
+    }
+    
+    .information p {
+        margin-left: 2rem;
     }
 
     .info {
         position: absolute;
-        bottom: 15%;
+        bottom: 2%;
         /* margin: 2rem auto; */
+    }
+    
+    .info a {
+        color: #1abc9c;
+        font-size: 1.75rem;
     }
 
     .social-media p {
@@ -1908,10 +2048,22 @@ textarea.input {
     .icon {
         width: 2rem;
     }
+    
+    form {
+        height: 45vh;
+        width: 85%;
+        left: 10%;
+        padding-top: 6rem;
+    }
+    
+    section {
+    
+    }
 
     .connect-title {
-        font-size: 3rem;
-        font-weight: 300;
+        font-size: 2.5rem;
+        margin: 3rem 0;
+        top: -5%;
     }
 
     .input {
@@ -1942,6 +2094,12 @@ textarea.input {
     textarea.input {
         min-height: 10rem;
     }
+    
+    .btn {
+        margin-top: 0;
+        font-size: 1.5rem
+         
+    }
 
 
 }
@@ -1954,6 +2112,7 @@ textarea.input {
 
     .title_sub {
         font-size: 5rem;
+        max-height: 300px;
     }
 
     .header_nav ul li a {
@@ -1961,7 +2120,7 @@ textarea.input {
     }
 
     .head_sub {
-        max-height: 37rem;
+        max-height: 44rem;
     }
 
     .top_contacts-link {
@@ -1976,6 +2135,7 @@ textarea.input {
 
     .nav-links.open {
         -webkit-clip-path: circle(60rem at -5% 95%);
+        clip-path: circle(50rem at -10% 90%);
     }
 
     .nav-links a {
@@ -1983,66 +2143,169 @@ textarea.input {
     }
 
     .about_section {
-        height: 110vh;
+        height: 85vh;
     }
 
     .about_intro {
-        font-size: 6.5rem;
-        left: 20%;
+        font-size: 4rem;
+        left: 2%;
+        /* left: 20%; */
     }
 
+    .skills_intro {
+        font-size: 2.75rem;
+        top: -80%;
+    }
+
+    .skills p {font-size: 1.5rem;line-height: 1.2;}
+
+    
+
     .about_body p {
-        top: 28%;
+        font-size: 1.5rem;
+        letter-spacing: .25rem;
+        top: 35%;
+        left: 5%;
     }
 
     .who_header {
-        font-size: 5rem;
-        top: 20%;
-        left: 30%;
+        font-size: 2.75rem;
+        top: 27%;
+        left: 5%;
     }
 
-    .skills {}
-
-    table caption {
-        font-size: 5rem;
+    .skills {
+    left: 5%;
+    bottom: -63%;
     }
 
-    table td {}
+    .myStuff-header {
+        font-size: 4rem;
+        margin-bottom: 5.25rem;
+    }
+ 
+    .project-section {
+        height: 94vh;
+    }
+
 
     .card {
-        padding: 10.5rem;
+        padding: 8rem;
+        right: 8px;
+        border-radius: 1.5rem;
+        border-radius: 1;
     }
 
     .wrapper {
         /* margin: 0rem; */
-        /* align-self: center; */
+        justify-content: center;
     }
 
     .modals {
-        column-gap: 1rem;
-        row-gap: 4rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        left: 2%;
+        column-gap: 2rem;
+        row-gap: 2rem;
         align-items: center;
     }
 
+    .project-slider__container {
+        height: 28rem;
+    }
+
+
+    .modals {
+    top: 11%;
+    left: 2%;
+    }
+
+    .modal-window1 {
+        width: 56%;
+        height: 70vh;
+    }
+
+    .project-slider__container .projectSlides img {
+        height: 24rem;
+    }
+
+    .projectSlider__dots {
+        bottom: 18%;
+        left: 33%;
+    }
+
+    .projectSlider__dots--dot {
+        height: 1rem;
+        width: 1rem;
+        margin: 0 1.5rem;
+    }
+
+    .modal-window1 h3 {
+        font-size: 3rem;
+        bottom: 55%;
+    }
+
+    .modal-window1 p {
+        font-size: 1.25rem;
+        width: 48%;
+        bottom: 42%;
+    }
+
+    .modal-buttons {
+        font-size: 1.5rem;
+    }
+
+    .close-modal {
+        font-size: 1.75rem;
+        top: 9%;
+        right:25%;
+    }
+
+    .buttons {
+        bottom: 24%;
+    }
+
+    .prev,
+    .next {
+        top: 32%;
+        font-size: 2.5rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 61vh;
+    }
+
     .work-together {
-        font-size: 4.5rem
+        font-size: 2rem;
+        width: 100%;
     }
 
     .contact-title {
-        font-size: 5rem;
+        font-size: 3rem;
+        margin-bottom: 4.5rem;
     }
 
     .text {
-        margin-bottom: 12rem;
+        font-size: 1.25rem;
     }
 
     .information {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .information a {
         color: #1abc9c;
     }
+
+    .information p {
+        margin-left: 3rem;
+    }
+    
+    .info a {
+	font-size: 2.25rem;
+}
 
     .icon {
         width: 2.5rem;
@@ -2059,21 +2322,20 @@ textarea.input {
     }
 
     .connect-title {
-        font-size: 2.25rem;
-        top: 9%;
-        left: 10%;
+        font-size: 3rem;
+        top: 1%;
+        left: 3%;
     }
 
     form section {
         position: absolute;
-        top: 21.25%;
-        left: 7%;
-        width: 85%;
+        top: 23.25%;
+        width: 100%;
     }
 
     .input {
         padding: .75rem;
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
     .input-container {
@@ -2081,7 +2343,7 @@ textarea.input {
     }
 
     .input-container label {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1.5rem;
     }
 
@@ -2102,58 +2364,38 @@ textarea.input {
     }
 
     .btn {
-        font-size: 2.5rem;
-        padding: .4rem 1.5rem;
-        margin-left: 40%;
+        font-size: 1.25rem;
+        padding: .5rem 1.5rem;
+        bottom: -19%;
+        position: absolute;
+    }
+
+    .contact-info {
     }
 
     form {
-        /* margin: 13rem; */
+        height: 61vh;
     }
 
-    .modal-window1 {
-        width: 80%;
-        height: 85vh;
+    .form {
+        height: 61vh;
     }
 
-    .project-slider__container .projectSlides img {
-        height: 35rem;
+
+    .bottom {
     }
 
-    .projectSlider__dots {
-        bottom: -10%;
-        left: 37%;
+    .circle.one {
+        top: 13%;
+        right: 0%;
     }
 
-    .projectSlider__dots--dot {
-        height: 1rem;
-        width: 1rem;
-        margin: 0 1.5rem;
+    .circle.two {
+    bottom: -25%;
     }
 
-    .modal-window1 h3 {
-        font-size: 4.25rem;
-        bottom: 43%;
-    }
-
-    .modal-window1 p {
-        font-size: 1.75rem;
-        width: 75%;
-        line-height: 2.5rem;
-    }
-
-    .modal-buttons {
-        font-size: 2rem;
-    }
-
-    .close-modal {
-        font-size: 3rem;
-    }
-
-    .prev,
-    .next {
-        top: 50%;
-        font-size: 4rem;
+    .contact-form {
+        height: 65vh;
     }
 
 }
@@ -2164,6 +2406,7 @@ textarea.input {
     .head_sub {
         max-height: 27.5rem;
         padding-top: 8.25rem;
+        margin-bottom: 25px;
     }
 
     .title {
@@ -2180,21 +2423,21 @@ textarea.input {
     .header_nav {
         position: absolute;
         left: -1.5%;
-        bottom: -40%;
+        bottom: -67%;
     }
 
     .header_nav ul li a {
         font-size: 2rem;
         padding: 0 2.5rem;
         font-weight: 100;
+        z-index: 1;
     }
 
     .header_nav ul {
-        /* margin-top: 1.5rem; */
     }
 
     .nav-links {
-        padding-top: 15rem
+        padding: 20rem 7rem;
     }
 
     .nav-links.open {
@@ -2221,12 +2464,13 @@ textarea.input {
 
     .mouse_scroll {
         right: 3%;
+        bottom: 10%;
     }
 
     .mouse {
-        height: 35px;
-        width: 20px;
-        border-radius: 9px;
+        height: 38px;
+        width: 22px;
+        border-radius: 6px;
     }
 
     .m_scroll_arrows {
@@ -2235,19 +2479,25 @@ textarea.input {
     }
 
     .about_section {
-        height: 135vh;
+        height: 120vh;
     }
-
+    
     .about_intro {
         font-size: 3.5rem;
         left: 10%;
     }
 
     .who_header {
-        font-size: 1.95rem;
-        top: 27%;
+        font-size: 2.25rem;
+        top: 25%;
         left: 12%;
-        letter-spacing: 4px;
+        letter-spacing: .5rem;
+    }
+    
+    .skills_intro {
+        top: -32%;
+        font-size: 2.25rem;
+        letter-spacing: .5rem;
     }
 
     .about_body p {
@@ -2267,22 +2517,17 @@ textarea.input {
     .skills {
         width: 50%;
         left: 12%;
-        bottom: -56%;
+        bottom: -63%;
     }
 
-    th {
-        text-align: start;
-        font-size: 1.13rem;
+    .info a {
+        font-size: 1.5rem; 
     }
 
-    table td {
-        font-size: 1.17rem;
-    }
-
-    .myStuff-header {}
+    .myStuff-header {height: 13vh;}
 
     .project-section {
-        height: 140vh;
+        height: 120vh;
     }
 
     .modals {
@@ -2318,11 +2563,11 @@ textarea.input {
     .project-slider__container {}
 
     .project-slider__container .projectSlides img {
-        height: 20rem;
+        height: 18rem;
     }
 
     .projectSlider__dots {
-        bottom: 0;
+        bottom: 37%;
         left: 35%;
     }
 
@@ -2335,7 +2580,7 @@ textarea.input {
     .prev,
     .next {
         font-size: 2.5rem;
-        top: 40%;
+        top: 19%;
     }
 
     .modal-window1 h3 {
@@ -2344,9 +2589,9 @@ textarea.input {
     }
 
     .modal-window1 p {
-        font-size: 1rem;
-        width: 85%;
-        bottom: 15%;
+        font-size: 1.25rem;
+        width: 89%;
+        top: 54%;
         line-height: 1.15;
         letter-spacing: 2px;
     }
@@ -2364,8 +2609,9 @@ textarea.input {
 
     .work-together {
         font-size: 2.15rem;
-        height: 13vh;
+        height: 8vh;
         width: 100%;
+        margin-top: 1rem;
     }
 
     .container {
@@ -2405,21 +2651,23 @@ textarea.input {
         left: 10%;
         margin-bottom: 0;
         width: 80%;
+        line-height: 1.35;
     }
 
     .information {
         font-size: 1.25rem;
+        padding: .5rem;
     }
 
 
     .information p {
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
     .info {
         position: absolute;
-        bottom: 0%;
-        left: 10%;
+        top: 55%;
+        left: 9%;
     }
 
     .icon {
