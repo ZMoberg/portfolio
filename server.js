@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 
 app.all('*', function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Origin', "https://www.zackmoberg.com/send");
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Origin, Basic, X-Requested-With, Content-Type, Accept, Authorization');
     res.header('Access-Control-Allow-Credentials', 'true');
@@ -31,7 +31,7 @@ let transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-    user: "zack@zackmoberg.com/",
+    user: "zack@zackmoberg.com",
     pass: "Creeps03!",
     },
     });
