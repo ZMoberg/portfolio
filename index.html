@@ -16,6 +16,9 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.typekit.net/ucl4sky.css">
 
+
+
+
 </head>
 <main>
     <!--Welcome Page-->
@@ -522,7 +525,7 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
                 <span class="top-circle"></span>
-                <form action="index.html" autocomplete="off" onsubmit="return false">
+                <form id="form" method="POST" action="send" enctype="multipart/form-data" autocomplete="off">
                     <div class="connect-title">CONTACT ME</div>
                     <section>
                         <div class="input-container">
@@ -531,16 +534,16 @@
                             <span>Full Name</span>
                         </div>
                         <div class="input-container">
-                            <input type="email" name="email" class="input" />
+                            <input type="email" name="email" class="input" required />
                             <label for="">Email</label>
                             <span>Email</span>
                         </div>
                         <div class="input-container textarea">
-                            <textarea name="message" class="input"></textarea>
+                            <textarea name="message" class="input" required></textarea>
                             <label for="">Message</label>
                             <span>Message</span>
                         </div>
-                        <input type="submit" value="Send" class="btn" onclick="sendContact();" />
+                        <input type="submit" value="submit" class="btn" />
                     </section>
                 </form>
             </div>
