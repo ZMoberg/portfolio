@@ -38,7 +38,7 @@ img {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: ;
+    /* background-image: ; */
     background-color: #32322C;
     background-size: cover;
     background-repeat: no-repeat;
@@ -602,7 +602,7 @@ a.left:hover:before {
     height: 116vh;
     width: 100%;
     position: relative;
-    background: url("../img/waveface3.png");
+    background: url("/img/waveface3.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #32322C;
@@ -701,7 +701,7 @@ a.left:hover:before {
     height: 286vh;
     width: 100%;
     margin: 0 auto;
-    background-image: url("../img/wavenoface2.png");
+    background-image: url("../img/waveface3.png");
     background-repeat: no-repeat;
     background-size: cover;
     /*     font-family: 'Hind Madurai', sans-serif; */

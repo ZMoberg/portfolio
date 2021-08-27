@@ -1,75 +1,51 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const multiparty = require("multiparty");
-const cors = require('cors')
-require("dotenv").config();
+const express = require('express');
+const nodemailer = require('nodemailer');
+const { reset } = require('nodemon');
+const app = express()
 
+const PORT = process.env.PORT || 5500
 
+//Middleware
 
-const app = express();
-app.use(cors());
+app.use(express.static('public'));
+app.use(express.json())
 
-app.all('*', function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', "https://www.zackmoberg.com/send");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Origin, Basic, X-Requested-With, Content-Type, Accept, Authorization');
-    res.header('Access-Control-Allow-Credentials', 'true');
-    next();
-  });
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html')
+})
 
-app.route("/").get(function (req, res) {
-    res.sendFile(process.cwd() + "/index.html")
-});
-
-const PORT = process.env.PORT || 5500; 
-app.listen(PORT, () => {
-    console.log(`listening on port ${PORT}...`)
-});
-
-let transporter = nodemailer.createTransport({
+app.post('/', (req, res) => {
+  console.log(req.body)
+  
+  let transporter = nodemailer.createTransport({
     host: "smtp.titan.email",
     port: 465,
-    secure: true,
+    // secure: true,
     auth: {
     user: "zack@zackmoberg.com",
-    pass: "Creeps03!",
+    pass: "creeps03",
     },
     });
 
-transporter.verify(function (error, success) {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("Server is ready to take our messages")
-    }
-});
+    const mailOptions = {
+      from: 'zack@zackmoberg.com',
+      to: "zack@zackmoberg.com",
+      subject: `${req.body.name} sent you a message`,
+      text: `${req.body.message} from ${req.body.email}`
+      }
 
-app.post("/send", (req, res) => {
-    //1.
-    let form = new multiparty.Form();
-    let data = {};
-    form.parse(req, function (err, fields) {
-      console.log(fields);
-      Object.keys(fields).forEach(function (property) {
-        data[property] = fields[property].toString();
-      });
-  
-      //2. You can configure the object however you want
-      const mail = {
-        from: data.name,
-        to: process.env.EMAIL,
-        subject: data.name,
-        text: `${data.name} <${data.email}> \n${data.message}`,
-      };
-  
-      //3.
-      transporter.sendMail(mail, (err, data) => {
-        if (err) {
-          console.log(err);
-          res.status(500).send("Something went wrong.");
+      transporter.sendMail(mailOptions, (error,info) => {
+        if(error) {
+          console.log(error);
+          res.send('error')
         } else {
-          res.status(200).send("Email successfully sent to recipient!");
+          console.log('Email sent: ' + info.response)
+          res.send('success')
         }
-      });
-    });
-  });
+      })
+})
+
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`)
+})

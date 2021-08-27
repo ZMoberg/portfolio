@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zack Moberg</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <link href="./public/home.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
     <link href="https://colorzilla.com/gradient-editor/#ffd65e+57,febf04+100">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -126,7 +125,7 @@
         <div class="modals" id="projects-scroll">
             <div class="wrapper">
                 <div class="card" data-target="simpleModal_1" data-toggle="modal1">
-                    <img src="./img/YelpCamp.png" alt="">
+                    <img src="/img/YelpCamp.png" alt="">
                     <div class="info">
                         <h1>YelpCamp</h1>
                     </div>
@@ -529,21 +528,21 @@
                     <div class="connect-title">CONTACT ME</div>
                     <section>
                         <div class="input-container">
-                            <input type="text" name="name" class="input" />
+                            <input type="text" id="name" name="name" class="input" />
                             <label for="">Name</label>
                             <span>Full Name</span>
                         </div>
                         <div class="input-container">
-                            <input type="email" name="email" class="input" required />
+                            <input type="email" id="email" name="email" class="input" required />
                             <label for="">Email</label>
                             <span>Email</span>
                         </div>
                         <div class="input-container textarea">
-                            <textarea name="message" class="input" required></textarea>
+                            <textarea id="message" name="message" class="input" required></textarea>
                             <label for="">Message</label>
                             <span>Message</span>
                         </div>
-                        <input type="submit" value="submit" class="btn" />
+                        <input type="submit" class="btn" value="Submit" />
                     </section>
                 </form>
             </div>
@@ -557,7 +556,7 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
 
-    <script src="./public/app.js"></script>
+    <script src="./js/app.js"></script>
 </main>
 
 </html>
