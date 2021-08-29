@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5500
 
 //Middleware
 
-app.use(express.static(__dirname, '/public/index.html'));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.json())
 
 app.get('/', (req, res) => {
