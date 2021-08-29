@@ -7,11 +7,11 @@ const PORT = process.env.PORT || 5500
 
 //Middleware
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
+  res.sendFile(__dirname + 'public/index.html')
 })
 
 app.post('/', (req, res) => {
