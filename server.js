@@ -1,6 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const { reset } = require('nodemon');
+
 const app = express()
 
 const PORT = process.env.PORT || 5500
@@ -11,13 +12,13 @@ const PORT = process.env.PORT || 5500
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
-})
-
-// app.get('/', (req, res, next) {
-//   res.render('index.html')
+// app.get('/', (req, res) => {
+//   res.sendFile(__dirname + '/index.html')
 // })
+
+app.get('/', (req, res) => {
+  res.render('index')
+})
 
 app.post('/', (req, res) => {
   console.log(req.body)
