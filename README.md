@@ -5,7 +5,7 @@
 
 # PORTFOLIO V2
 
-This is a personal page built to display current and past projects to potential clients and / or employers. 
+This is a personal page built to display current and past projects to potential clients. 
 
 ### Projects
 
