@@ -1,12 +1,13 @@
-This is V2 of my personal portfolio. My goal for this project was to have an evolving space to display my past and current projects for potential employers and clients. I left the use of frame-works out of this project as much as I could in order to test, learn and solidify my current skillset. I did however utilize a GSAP feature 'ScrollTrigger' to create a dynamic scroll event involving a header.
+![Portfolio Landing Page](https://user-images.githubusercontent.com/31117834/132765801-53d90134-8b6b-4e1e-96a0-1b6d5a99625d.png)
+
+<br>
+<br>
+
+# PORTFOLIO V2
+
+This is a personal page built to display current and past projects to potential clients and / or employers. 
+
+### Projects
 
 
-- Technologies Used
 
-  HTML
-  <br>
-  CSS
-  <br>
-  JavaScript
-  <br>
-  Gsap's 'ScrollTrigger' event scrolling tool
