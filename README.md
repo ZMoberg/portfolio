@@ -34,8 +34,16 @@ Users can create a custom account that enables them to add a new campground, upl
 <img src="https://user-images.githubusercontent.com/31117834/132909201-ed17b0b6-73eb-4965-bec6-adf793fcb0b9.png" width="400">
 <br>
 
-**RTIC** 
+Re-creation of the **RTIC** website to showcase layout potential for future projects. With a fully functioning shopping cart, users are able to get a full experience from shopping to the checkout process.
 
+### Built With
+
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* **Node.js**
+* **Express**
+* 
 
 
 
