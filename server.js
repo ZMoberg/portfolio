@@ -27,7 +27,7 @@ app.post('/', (req, res) => {
   let transporter = nodemailer.createTransport({
     host: "smtp.titan.email",
     port: 465,
-    // secure: true,
+    secure: true,
     auth: {
     user: "zack@zackmoberg.com",
     pass: "creeps03",
