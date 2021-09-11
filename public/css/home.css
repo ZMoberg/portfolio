@@ -1985,8 +1985,13 @@ textarea.input {
         line-height: 1.5;
     }
 
+    .stack {
+        bottom: 30%;
+        left: 15%;
+    }
+
     .buttons {
-        bottom: 19%;
+        bottom: 20%;
     }
 
     .modal-buttons {
@@ -2260,14 +2265,14 @@ textarea.input {
     }
 
     .modal-window1 h3 {
-        font-size: 3rem;
-        bottom: 55%;
+        font-size: 4rem;
+        top: 35%;
     }
 
     .modal-window1 p {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         width: 48%;
-        bottom: 42%;
+        top: 44%;
     }
 
     .modal-buttons {
@@ -2282,6 +2287,12 @@ textarea.input {
 
     .buttons {
         bottom: 24%;
+    }
+
+    .stack {
+        bottom: 34%;
+        left: 21%;
+        width: 85%;
     }
 
     .prev,
@@ -2590,31 +2601,37 @@ textarea.input {
     }
 
     .projectSlider__dots--dot {
-        height: .75rem;
-        width: .75rem;
+        height: .5rem;
+        width: .5rem;
         margin: 0 1rem;
     }
 
     .prev,
     .next {
-        font-size: 2.5rem;
-        top: 19%;
+        font-size: 2rem;
+        top: 21%;
     }
 
     .modal-window1 h3 {
         font-size: 2.5rem;
-        bottom: 30%;
+        top: 47%;
     }
 
     .modal-window1 p {
-        font-size: 1.25rem;
-        width: 89%;
-        top: 54%;
+        font-size: 1rem;
+        width: 85%;
+        top: 60%;
+        left: 6%;
         line-height: 1.15;
         letter-spacing: 2px;
     }
 
-    .modal-window1 p {}
+    .stack {
+        font-size: 1rem;
+        bottom: 16%;
+        left: 15%;
+        width: 75%;
+    }
 
     .buttons {
         bottom: 3%;
