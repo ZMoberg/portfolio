@@ -238,7 +238,7 @@ contactForm.addEventListener('submit', (e) => {
   }
 
   let xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://www.zackmoberg.com');
+  xhr.open('POST', 'https://www.zackmoberg.com');
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.onload = function() {
     console.log(xhr.responseText);
