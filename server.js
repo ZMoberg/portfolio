@@ -17,6 +17,12 @@ app.use(cors());
 //   res.sendFile(__dirname + '/index.html')
 // })
 
+app.get("/hello-world", (req, res)=>{
+  res.status(200).json({
+    msg: "hello world"
+  })
+})
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
   // res.render(__dirname + '/index.html')
