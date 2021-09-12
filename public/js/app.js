@@ -237,13 +237,34 @@ contactForm.addEventListener('submit', (e) => {
     message: message.value
   }
 
+  fetch("/", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  }).then((response)=>{
+    return response.text().then((json)=>{
+      if(!response.ok){
+        alert('Something went wrong')
+      } else {
+        alert('Message Sent!');
+        name.value = '';
+        email.value = '';
+        message.value = '';  
+      }
+    })
+  })
+
+  /*
+
   let xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://www.zackmoberg.com');
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.onload = function() {
     console.log(xhr.responseText);
     if(xhr.responseText == 'success') {
-      alert('Message Sent!');
+      alert('Message Sent0!');
       name.value = '';
       email.value = '';
       message.value = '';
@@ -254,6 +275,6 @@ contactForm.addEventListener('submit', (e) => {
 
   xhr.send(JSON.stringify(formData))
 
-
+  */
 
 })

@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5500
 
 //Middleware
 
-app.use(express.static('./public'))
+app.use("/public", express.static('./public'))
 app.use(express.json())
 app.use(cors());
 
@@ -17,12 +17,13 @@ app.use(cors());
 //   res.sendFile(__dirname + '/index.html')
 // })
 
-app.get('./', (req, res) => {
-  res.render('./index')
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html')
+  // res.render(__dirname + '/index.html')
 })
 
-app.post('./', (req, res) => {
-  console.log(req.body)
+app.post('/', (req, res) => {
+  console.log("req body", req.body)
   
   let transporter = nodemailer.createTransport({
     host: "smtp.titan.email",
@@ -32,24 +33,28 @@ app.post('./', (req, res) => {
     user: "zack@zackmoberg.com",
     pass: "creeps03",
     },
-    });
+  });
 
-    const mailOptions = {
-      from: `${req.body.email}`,
+  console.log("transporter:", transporter)
+
+  const mailOptions = {
+      from: `${'zack@zackmoberg.com'}`,
       to: "zack@zackmoberg.com",
       subject: `${req.body.name} sent you a message`,
       text: `${req.body.message} from ${req.body.email}`
-      }
+  };
 
-      transporter.sendMail(mailOptions, (error,info) => {
+  console.log("mailOptions:", mailOptions)
+
+  transporter.sendMail(mailOptions, (error,info) => {
         if(error) {
-          console.log(error);
-          res.send('error')
+          console.error("semail error", error);
+          res.status(500).send('error')
         } else {
           console.log('Email sent: ' + info.response)
-          res.send('success')
+          res.status(200).send('success')
         }
-      })
+  })
 })
 
 
