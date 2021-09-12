@@ -17,11 +17,11 @@ app.use(cors());
 //   res.sendFile(__dirname + '/index.html')
 // })
 
-app.get('/', (req, res) => {
+app.get('./', (req, res) => {
   res.render('./index')
 })
 
-app.post('/', (req, res) => {
+app.post('./', (req, res) => {
   console.log(req.body)
   
   let transporter = nodemailer.createTransport({
