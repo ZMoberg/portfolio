@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5500
 
 //Middleware
 
-app.use(express.static('/public'))
+app.use(express.static('./public'))
 app.use(express.json())
 app.use(cors());
 
@@ -18,7 +18,7 @@ app.use(cors());
 // })
 
 app.get('/', (req, res) => {
-  res.render('/index')
+  res.render('./index')
 })
 
 app.post('/', (req, res) => {
@@ -35,7 +35,7 @@ app.post('/', (req, res) => {
     });
 
     const mailOptions = {
-      from: 'zack@zackmoberg.com',
+      from: `${req.body.email}`,
       to: "zack@zackmoberg.com",
       subject: `${req.body.name} sent you a message`,
       text: `${req.body.message} from ${req.body.email}`
