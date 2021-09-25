@@ -37,7 +37,7 @@ app.post('/', (req, res) => {
     secure: true,
     auth: {
     user: "zack@zackmoberg.com",
-    pass: "creeps03",
+    pass: "Creeps03!",
     },
   });
 
@@ -54,7 +54,7 @@ app.post('/', (req, res) => {
 
   transporter.sendMail(mailOptions, (error,info) => {
         if(error) {
-          console.error("semail error", error);
+          console.error("send mail error", error);
           res.status(500).send('error')
         } else {
           console.log('Email sent: ' + info.response)
