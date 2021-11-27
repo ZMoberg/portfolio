@@ -5,7 +5,7 @@
 
 # PORTFOLIO V2
 
-This is a personal page built to display current and past projects. 
+V2 of my personal portfolio that displays current and past projects. Implementing minimal package assistance the project was completed with a focus on "vanilla" concepts of HTML5 / CSS3 and JavaScript.
 <br>
 <br>
 ## Current Projects
