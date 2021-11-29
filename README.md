@@ -12,7 +12,7 @@ V2 of my personal portfolio that displays current and past projects. Implementin
 
 
 ## YelpCamp
-<img src="https://user-images.githubusercontent.com/31117834/132883886-cc577afc-dc0e-478a-ab06-873dd1b31312.png" width="400">
+<img src="https://github.com/ZMoberg/portfolio/blob/main/public/img/yc-home.jpg" width="400">
 <br>
 <b>YelpCamp</b> is a web application created for users to share and review campgrounds built using <b>Node.js</b>. Users can create a custom account that enables them to add a new campground, upload pictures, share the location and review their experience of the campsites they visit.<br>
 
@@ -44,10 +44,10 @@ Re-creation of the **RTIC** website to showcase layout potential for future proj
 * **Node.js**
 * **Express**
 
-&nbsp; [code](https://github.com/ZMoberg/RTIC) &nbsp; ![demo](#)
+&nbsp; [code](https://github.com/ZMoberg/RTIC) &nbsp; [demo](#)
 
 ## Le'Fiat
-<img src="https://user-images.githubusercontent.com/31117834/132928715-7dcd8730-b848-4be0-91a1-1ce7c9aa5f96.png" width="400">
+<img src="https://github.com/ZMoberg/lefiatV2/blob/master/public/img/lf-home.jpg" width="400">
 <br>
 
 **Le'Fiat** is an adventure company offering guided backpacking trips and gear rental. Sign up for the mailing list to stay updated on latest trips and deals, or keep up with the companies sponsored athletes on the teams ![blog](#) 
@@ -62,7 +62,7 @@ Re-creation of the **RTIC** website to showcase layout potential for future proj
 * **Node.js**
 * **Express**
 
-&nbsp; [code](https://github.com/ZMoberg/LeFIAT) &nbsp; ![demo](#)
+&nbsp; [code](https://github.com/ZMoberg/LeFIAT) &nbsp; [demo](#)
 
 
 
