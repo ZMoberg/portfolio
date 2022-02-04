@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-copy",
+  "version": "1.0.0",
+  "description": "This is my first rendition of my personal portfolio. My goal for this project was to have an evolving space to display my past and current projects for potential employers and clients. I left the use of frame-works out of this project as much as I could in order to test, learn and solidify my current skillset. I did however utilize a GSAP feature 'ScrollTrigger' to create a dynamic scroll event involving a header.",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "gsap": "^3.6.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.3",
+    "npm": "^7.21.0",
+    "scrollmagic": "^2.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZMoberg/portfolio.git"
+  },
+  "author": "https://www.zackmoberg.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZMoberg/portfolio/issues"
+  },
+  "homepage": "https://github.com/ZMoberg/portfolio#readme"
+}

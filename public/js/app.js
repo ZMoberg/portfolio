@@ -220,4 +220,65 @@ inputs.forEach((input) => {
 });
 
 
+<<<<<<< HEAD:public/app.js
 // Contact form authentication and submission
+=======
+// Contact form authentication and submission
+
+const contactForm = document.getElementById('form');
+
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+let message = document.getElementById('message');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  let formData = {
+    name: name.value,
+    email: email.value,
+    message: message.value
+  }
+
+  fetch("/", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  }).then((response)=>{
+    return response.text().then((json)=>{
+      if(!response.ok){
+        alert('Something went wrong')
+      } else {
+        alert('Message Sent!');
+        name.value = '';
+        email.value = '';
+        message.value = '';  
+      }
+    })
+  })
+
+  /*
+
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://www.zackmoberg.com');
+  xhr.setRequestHeader('content-type', 'application/json');
+  xhr.onload = function() {
+    console.log(xhr.responseText);
+    if(xhr.responseText == 'success') {
+      alert('Message Sent0!');
+      name.value = '';
+      email.value = '';
+      message.value = '';
+    } else {
+      alert('Something went wrong!')
+    }
+  }
+
+  xhr.send(JSON.stringify(formData))
+
+  */
+
+})
+>>>>>>> d91ad206fb7f3e8ed0424633078efa1e540e8f15:public/js/app.js
