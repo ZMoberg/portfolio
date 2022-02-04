@@ -2,12 +2,19 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zack Moberg</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="./public/home.css" rel="stylesheet">
     <link href="https://colorzilla.com/gradient-editor/#ffd65e+57,febf04+100">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.typekit.net/ucl4sky.css">
 
 </head>
 <main>
@@ -15,19 +22,14 @@
 
     <header class="landing-page" id="welcome-section">
         <div class="cover" onclick="closeNav();"></div>
-        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="150" onclick="closeNav()">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="75" onclick="closeNav()">
             <path class="line top"
                 d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
             <path class="line middle" d="m 30,50 h 40" />
             <path class="line bottom"
                 d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
         </svg>
-        <!-- <div class="top_contacts">
-            <a href="https://github.com/ZMoberg" id="profile-link" class="top_contacts-link" target="_blank"
-                alt="Github"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/zackmoberg/" id="profile-link" class="top_contacts-link"
-                target="_blank" alt="Linkedin"><i class="fab fa-linkedin"></i></a>
-        </div> -->
+
 
         <!--Navigation bar-->
         <nav id="navbar" class="nav">
@@ -40,8 +42,16 @@
 
         <section class="head_sub">
             <div class="scroller">
+
+                <div class="top_contacts">
+                    <a href="https://github.com/ZMoberg" id="profile-link" class="top_contacts-link" target="_blank"
+                        alt="Github" rel="noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zackmoberg/" id="profile-link" class="top_contacts-link"
+                        target="_blank" alt="Linkedin" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+
                 <h1 class="title">ZACK MOBERG</h1>
-                <p class="title_sub">Web Developer <br> & UI/UX Designer</p>
+                <h3 class="title_sub">Web Developer & UI/UX Designer</h3>
                 <div class="header_nav">
                     <ul>
                         <li class="title_nav"><a href="#about_scroll" class="left">ABOUT</a></li>
@@ -73,10 +83,10 @@
 
     <section class="about_section" id="about_scroll">
         <div class="about_body">
-            <div class="about_intro">
+            <h2 class="about_intro">
                 Hi. I'm Zack.
-            </div>
-            <h1 class="who_header">Who I am</h1>
+            </h2>
+            <div class="who_header">WHO I AM.</div>
             <p class="about-text">
                 I am a developer living in Los Angeles and like to simplify difficult tasks. Problem solving excites
                 me and I enjoy bringing virtual ideas into reality. Helping others chase their dreams while gaining
@@ -85,66 +95,32 @@
 
             </p>
         </div>
-        <table class="skills">
-            <caption>What I do</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Front-End</th>
-                    <th scope="col">Back-End</th>
-                    <th scope="col">Tools </th>
-                    <th scope="col">Soft Skills</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML5</td>
-                    <td>Node.JS</td>
+        <section class="skills">
+            <div class="skills_intro">WHAT I DO.</div>
+            <p><span>Front-End :</span> HTML5 <strong>/</strong> CSS3 <strong>/</strong> Sass <strong>/</strong>
+                Bootstrap <strong>/</strong> JavaScript <strong>/</strong>
+                GSAP</p> <br>
+            <p><span>Back-End :</span> Node.JS <strong>/</strong> Express <strong>/</strong> MongoDB
+                <strong>/</strong> StackOverflow</p><br>
+            <p><span>Tools :</span> Git/GitHub <strong>/</strong> Jest <strong>/</strong> Postman <strong>/</strong>
+                Robo 3T</p><br>
+            <p><span>Soft Skills :</span> Leadership <strong>/</strong> Marketing <strong>/</strong> Collaboration
+                <strong>/</strong> Organization</p>
 
-                    <td>Git/GitHub</td>
-                    <td>Marketing</td>
-                </tr>
-                <tr>
-                    <td>CSS3</td>
-                    <td>Express</td>
-
-                    <td>Jest</td>
-                    <td>Collaboration</td>
-                </tr>
-                <tr>
-                    <td>Sass</td>
-                    <td>MonogoDB</td>
-
-                    <td>Postman</td>
-                    <td>Organization</td>
-                </tr>
-                <tr>
-                    <td>Bootstrap</td>
-                    <td>StackOverflow</td>
-
-                    <td>Robo 3T</td>
-                    <td>Leadership</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                </tr>
-                <tr>
-                    <td>GSAP</td>
-                </tr>
-            </tbody>
-        </table>
+        </section>
 
     </section>
 
     <!-- Projects header -->
 
     <div class="myStuff-header">
-        <p class="myStuff">My Stuff</p>
+        <h2 class="myStuff">My Stuff</h2>
     </div>
 
     <!-- Projects section-->
 
     <section class="project-section">
-        <div class="modals">
+        <div class="modals" id="projects-scroll">
             <div class="wrapper">
                 <div class="card" data-target="simpleModal_1" data-toggle="modal1">
                     <img src="./img/YelpCamp.png" alt="">
@@ -157,22 +133,20 @@
             <div id="simpleModal_1" class="modal1">
 
                 <div class="modal-window1">
-
+                    <i class="close-modal fas fa-times" data-dismiss="modal1"></i>
                     <div class="project-slider__container">
+
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">1 / 3</div>
                             <img src="./img/YelpCamp.png">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">2 / 3</div>
                             <img src="./img/reviewPage.png">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">3 / 3</div>
                             <img src="./img/login.png">
 
                         </div>
@@ -187,20 +161,14 @@
                     </div>
 
                     <h3>YelpCamp</h3>
-                    <p>A campground review site created to plan, inspire and share your latest trip. By implementing
-                        user
-                        authentication it creates a personal and secure experience. It allows the user to post a full
-                        campground review with photo sharing as well as leave reviews on previously shared campgrounds.
-                        With
-                        the addition of an interactive map the user is able to save and share specific coordinates of
-                        their
-                        favorite camp
-                        spots or plan their next getaway.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod nesciunt dicta, distinctio
+                        obcaecati illo facere, cumque ducimus eveniet fuga sapiente! Mollitia qui doloremque dolorem
+                        sint perferendis fugiat aperiam a.
                     </p>
                     <div class="buttons">
-                        <a href="https://murmuring-castle-93653.herokuapp.com/" target="_blank"><button
+                        <a href="https://murmuring-castle-93653.herokuapp.com/" target="_blank" rel="noreferrer"><button
                                 class="modal-buttons">Live Project</button></a>
-                        <a href="https://github.com/ZMoberg/YelpCamp" target="_blank"><button
+                        <a href="https://github.com/ZMoberg/YelpCamp" target="_blank" rel="noreferrer"><button
                                 class="modal-buttons">Source
                                 Code</button></a>
                     </div>
@@ -209,9 +177,9 @@
 
             <div class="wrapper">
                 <div class="card" data-target="simpleModal_2" data-toggle="modal1">
-                    <img src="./img/fcc_Landingpage.png" alt="">
+                    <img src="./img/card3.jpg" alt="">
                     <div class="info">
-                        <h1>RTIC</h1>
+                        <h1>LeFIAT</h1>
                     </div>
                 </div>
             </div>
@@ -219,36 +187,92 @@
             <div id="simpleModal_2" class="modal1">
 
                 <div class="modal-window1">
-
+                    <i class="close-modal fas fa-times" data-dismiss="modal1"></i>
                     <div class="project-slider__container">
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">1 / 3</div>
-                            <img src="./img/fcc_Landingpage.png">
+                            <img src="./img/YelpCamp.png">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">2 / 3</div>
-                            <img src="./img/landing-products.png">
+                            <img src="./img/card1.jpg">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">3 / 3</div>
                             <img src="./img/card2.jpg">
 
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="projectSlider__dots" style="text-align:center">
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
                     <br>
 
-                    <div class="projectSlider__dots" style="text-align:center">
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+
+
+                    <h3>LeFIAT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
+                        veniam
+                        iure
+                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
+                        perspiciatis.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://lefiat.herokuapp.com/" target="_blank"><button class="modal-buttons">Live Project</button></a>
+                        <a href="https://github.com/ZMoberg/lefiatV2" target="_blank"><button class="modal-buttons">Source
+                                Code</button></a>
                     </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="card" data-target="simpleModal_3" data-toggle="modal1">
+                    <img src="./img/fcc_Landingpage.png" alt="">
+                    <div class="info">
+                        <h1>RTIC</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="simpleModal_3" class="modal1">
+
+                <div class="modal-window1">
+                    <i class="close-modal fas fa-times" data-dismiss="modal1"></i>
+                    <div class="project-slider__container">
+                        <div class="projectSlides fade">
+                            <img src="./img/fcc_Landingpage.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <img src="./img/landing-products.png">
+
+                        </div>
+
+                        <div class="projectSlides fade">
+                            <img src="./img/card2.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="projectSlider__dots" style="text-align:center">
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                    <br>
+
+
 
                     <h3>RTIC</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
@@ -261,70 +285,8 @@
                     </p>
                     <div class="buttons">
                         <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
-                        <a href="https://github.com/ZMoberg/LandingPage-Practice.gity" target="_blank"><button
-                                class="modal-buttons">Source
-                                Code</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="wrapper">
-                <div class="card" data-target="simpleModal_3" data-toggle="modal1">
-                    <img src="./img/card3.jpg" alt="">
-                    <div class="info">
-                        <h1>Coming Soon</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div id="simpleModal_3" class="modal1">
-
-                <div class="modal-window1">
-
-
-                    <div class="project-slider__container">
-                        <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">1 / 3</div>
-                            <img src="./img/YelpCamp.png">
-
-                        </div>
-
-                        <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">2 / 3</div>
-                            <img src="./img/card1.jpg">
-
-                        </div>
-
-                        <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">3 / 3</div>
-                            <img src="./img/card2.jpg">
-
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-
-                    <div class="projectSlider__dots" style="text-align:center">
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                    </div>
-
-                    <h3>Heading</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
-                        consectetur
-                        adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
-                        veniam
-                        iure
-                        sint aut beatae illo iusto explicabo voluptatem aperiam corporis unde voluptate
-                        perspiciatis.
-                    </p>
-                    <div class="buttons">
-                        <a href="#" target="_blank"><button class="modal-buttons">Live Project</button></a>
-                        <a href="#" target="_blank"><button class="modal-buttons">Source
+                        <a href="https://github.com/ZMoberg/LandingPage-Practice.gity" target="_blank"
+                            rel="noreferrer"><button class="modal-buttons">Source
                                 Code</button></a>
                     </div>
                 </div>
@@ -342,36 +304,34 @@
             <div id="simpleModal_4" class="modal1">
 
                 <div class="modal-window1">
-
+                    <i class="close-modal fas fa-times" data-dismiss="modal1"></i>
                     <div class="project-slider__container">
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">1 / 3</div>
                             <img src="./img/YelpCamp.png">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">2 / 3</div>
                             <img src="./img/card1.jpg">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">3 / 3</div>
                             <img src="./img/card2.jpg">
 
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="projectSlider__dots" style="text-align:center">
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
                     <br>
 
-                    <div class="projectSlider__dots" style="text-align:center">
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                    </div>
+
 
 
                     <h3>Heading</h3>
@@ -403,37 +363,34 @@
             <div id="simpleModal_5" class="modal1">
 
                 <div class="modal-window1">
-
-
+                    <i class="close-modal fas fa-times" data-dismiss="modal1"></i>
                     <div class="project-slider__container">
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">1 / 3</div>
                             <img src="./img/YelpCamp.png">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">2 / 3</div>
                             <img src="./img/card1.jpg">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">3 / 3</div>
                             <img src="./img/card2.jpg">
 
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="projectSlider__dots" style="text-align:center">
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
                     <br>
 
-                    <div class="projectSlider__dots" style="text-align:center">
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                    </div>
+
 
                     <h3>Heading</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
@@ -456,7 +413,7 @@
                 <div class="card" data-target="simpleModal_6" data-toggle="modal1">
                     <img src="./img/card6.jpg" alt="">
                     <div class="info">
-                        <h1>HTML Email Templates</h1>
+                        <h1>HTML Emails</h1>
                     </div>
                 </div>
             </div>
@@ -464,39 +421,37 @@
             <div id="simpleModal_6" class="modal1">
 
                 <div class="modal-window1">
-
+                    <i class="close-modal fas fa-times" data-dismiss="modal1"></i>
                     <div class="project-slider__container">
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">1 / 3</div>
                             <img src="./img/YelpCamp.png">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">2 / 3</div>
                             <img src="./img/card1.jpg">
 
                         </div>
 
                         <div class="projectSlides fade">
-                            <div class="project-slider__numbertext">3 / 3</div>
                             <img src="./img/card2.jpg">
 
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="projectSlider__dots" style="text-align:center">
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
+                            <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
                     <br>
 
-                    <div class="projectSlider__dots" style="text-align:center">
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(1)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(2)"></span>
-                        <span class="projectSlider__dots--dot" onclick="currentSlide(3)"></span>
-                    </div>
 
 
-                    <h3>HTML Email Templates</h3>
+
+                    <h3>HTML Emails</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet
                         consectetur
                         adipisicing elit. Repellendus inventore dolorum odio id quaerat, dignissimos architecto
@@ -506,7 +461,7 @@
                         perspiciatis.
                     </p>
                     <div class="buttons">
-                        <a href="#" target="_blank"><button class="modal-buttons">Demos</button></a>
+                        <a href="#" target="_blank"><button class="modal-buttons">Templates</button></a>
                         <!-- <a href="#" target="_blank"><button class="modal-buttons">Source
                             Code</button></a> -->
                     </div>
@@ -517,7 +472,7 @@
 
     <!-- Footer break -->
     <div class="work-together">
-        <h2>Interested in Working Together..?</h2>
+        <h2>Interested in Working Together?</h2>
     </div>
     <section class="bottom" id="contact">
 
@@ -528,11 +483,11 @@
         <div class="container">
             <div class="form">
                 <div class="contact-info">
-                    <h3 class="contact-title">Let's get in touch</h3>
+                    <div class="contact-title">LETS GET IN TOUCH</div>
                     <p class="text">
-                        Inspiration can come from anywhere and take on many forms, what does yours look like?
-                        Whether you have an idea or project you would like to collaborate on, send me a message and
-                        reach out.
+                        Inspiration can come from anywhere and take on many forms, what does yours look like?<br><br>
+                        Whether you'd like to collaborate on just small idea or a huge project, reach out and send a
+                        message.
                     </p>
 
                     <div class="info">
@@ -541,48 +496,52 @@
                             <p>Los Angeles, California</p>
                         </div>
                         <div class="information">
-                            <a href="mailto:zmoberg@gmail.com"><img src="img/email.png" class="icon two" alt="" /></a>
-                            <p>zmoberg@gmail.com</p>
-
+                            <a href="mailto:zack@zackmoberg.com"><img src="img/email.png" class="icon two" alt="" /></a>
+                            <p>zack@zackmoberg.com</p>
                         </div>
-                    </div>
-                    <!-- <span class="circle-border"></span> -->
-                    <div class="social-media">
-                        <p>Connect :</p>
-                        <div class="social-icons">
-                            <a href="https://github.com/ZMoberg"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/zackmoberg/">
+                        <div class="information">
+                            <a href="https://github.com/ZMoberg" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-github"></i>
+                            </a>
+                            <p>@zmoberg</p>
+                        </div>
+                        <div class="information">
+                            <a href="https://www.linkedin.com/in/zackmoberg/" target="_blank" rel="noreferrer">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
+                            <p>@zmoberg</p>
                         </div>
                     </div>
-                </div>
+                    <span class="circle-border"></span>
 
-                <div class="contact-form">
-                    <span class="circle one"></span>
-                    <span class="circle two"></span>
-
-                    <form action="index.html" autocomplete="off">
-                        <h3 class="connect-title">Contact me</h3>
-                        <div class="input-container">
-                            <input type="text" name="name" class="input" />
-                            <label for="">Full Name</label>
-                            <span>Username</span>
-                        </div>
-                        <div class="input-container">
-                            <input type="email" name="email" class="input" />
-                            <label for="">Email</label>
-                            <span>Email</span>
-                        </div>
-                        <div class="input-container textarea">
-                            <textarea name="message" class="input"></textarea>
-                            <label for="">Message</label>
-                            <span>Message</span>
-                        </div>
-                        <input type="submit" value="Send" class="btn" />
-                    </form>
                 </div>
             </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">CONTACT ME</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Full Name</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
         </div>
 
     </section>
@@ -590,7 +549,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 
     <script src="./public/app.js"></script>
 </main>
